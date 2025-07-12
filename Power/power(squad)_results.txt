@@ -1,0 +1,349 @@
+Collecting evaluate
+  Downloading evaluate-0.4.5-py3-none-any.whl.metadata (9.5 kB)
+Requirement already satisfied: datasets>=2.0.0 in /usr/local/lib/python3.11/dist-packages (from evaluate) (3.6.0)
+Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.11/dist-packages (from evaluate) (1.26.4)
+Requirement already satisfied: dill in /usr/local/lib/python3.11/dist-packages (from evaluate) (0.3.8)
+Requirement already satisfied: pandas in /usr/local/lib/python3.11/dist-packages (from evaluate) (2.2.3)
+Requirement already satisfied: requests>=2.19.0 in /usr/local/lib/python3.11/dist-packages (from evaluate) (2.32.4)
+Requirement already satisfied: tqdm>=4.62.1 in /usr/local/lib/python3.11/dist-packages (from evaluate) (4.67.1)
+Requirement already satisfied: xxhash in /usr/local/lib/python3.11/dist-packages (from evaluate) (3.5.0)
+Requirement already satisfied: multiprocess in /usr/local/lib/python3.11/dist-packages (from evaluate) (0.70.16)
+Requirement already satisfied: fsspec>=2021.05.0 in /usr/local/lib/python3.11/dist-packages (from fsspec[http]>=2021.05.0->evaluate) (2025.5.1)
+Requirement already satisfied: huggingface-hub>=0.7.0 in /usr/local/lib/python3.11/dist-packages (from evaluate) (0.33.1)
+Requirement already satisfied: packaging in /usr/local/lib/python3.11/dist-packages (from evaluate) (25.0)
+Requirement already satisfied: filelock in /usr/local/lib/python3.11/dist-packages (from datasets>=2.0.0->evaluate) (3.18.0)
+Requirement already satisfied: pyarrow>=15.0.0 in /usr/local/lib/python3.11/dist-packages (from datasets>=2.0.0->evaluate) (19.0.1)
+Collecting fsspec>=2021.05.0 (from fsspec[http]>=2021.05.0->evaluate)
+  Downloading fsspec-2025.3.0-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.11/dist-packages (from datasets>=2.0.0->evaluate) (6.0.2)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.11/dist-packages (from fsspec[http]>=2021.05.0->evaluate) (3.12.13)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.11/dist-packages (from huggingface-hub>=0.7.0->evaluate) (4.14.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.2 in /usr/local/lib/python3.11/dist-packages (from huggingface-hub>=0.7.0->evaluate) (1.1.5)
+Requirement already satisfied: mkl_fft in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (1.3.8)
+Requirement already satisfied: mkl_random in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (1.2.4)
+Requirement already satisfied: mkl_umath in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (0.1.1)
+Requirement already satisfied: mkl in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (2025.2.0)
+Requirement already satisfied: tbb4py in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (2022.2.0)
+Requirement already satisfied: mkl-service in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (2.4.1)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.11/dist-packages (from requests>=2.19.0->evaluate) (3.4.2)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.11/dist-packages (from requests>=2.19.0->evaluate) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.11/dist-packages (from requests>=2.19.0->evaluate) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.11/dist-packages (from requests>=2.19.0->evaluate) (2025.6.15)
+Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.11/dist-packages (from pandas->evaluate) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.11/dist-packages (from pandas->evaluate) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.11/dist-packages (from pandas->evaluate) (2025.2)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (2.6.1)
+Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (1.3.2)
+Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (25.3.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (1.7.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (6.6.3)
+Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (0.3.2)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (1.20.1)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.11/dist-packages (from python-dateutil>=2.8.2->pandas->evaluate) (1.17.0)
+Requirement already satisfied: intel-openmp<2026,>=2024 in /usr/local/lib/python3.11/dist-packages (from mkl->numpy>=1.17->evaluate) (2024.2.0)
+Requirement already satisfied: tbb==2022.* in /usr/local/lib/python3.11/dist-packages (from mkl->numpy>=1.17->evaluate) (2022.2.0)
+Requirement already satisfied: tcmlib==1.* in /usr/local/lib/python3.11/dist-packages (from tbb==2022.*->mkl->numpy>=1.17->evaluate) (1.4.0)
+Requirement already satisfied: intel-cmplr-lib-rt in /usr/local/lib/python3.11/dist-packages (from mkl_umath->numpy>=1.17->evaluate) (2024.2.0)
+Requirement already satisfied: intel-cmplr-lib-ur==2024.2.0 in /usr/local/lib/python3.11/dist-packages (from intel-openmp<2026,>=2024->mkl->numpy>=1.17->evaluate) (2024.2.0)
+Downloading evaluate-0.4.5-py3-none-any.whl (84 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.1/84.1 kB 3.6 MB/s eta 0:00:00
+Downloading fsspec-2025.3.0-py3-none-any.whl (193 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 193.6/193.6 kB 9.8 MB/s eta 0:00:00
+Installing collected packages: fsspec, evaluate
+  Attempting uninstall: fsspec
+    Found existing installation: fsspec 2025.5.1
+    Uninstalling fsspec-2025.5.1:
+      Successfully uninstalled fsspec-2025.5.1
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+bigframes 2.8.0 requires google-cloud-bigquery-storage<3.0.0,>=2.30.0, which is not installed.
+cesium 0.12.4 requires numpy<3.0,>=2.0, but you have numpy 1.26.4 which is incompatible.
+torch 2.6.0+cu124 requires nvidia-cublas-cu12==12.4.5.8; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cublas-cu12 12.5.3.2 which is incompatible.
+torch 2.6.0+cu124 requires nvidia-cuda-cupti-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cuda-cupti-cu12 12.5.82 which is incompatible.
+torch 2.6.0+cu124 requires nvidia-cuda-nvrtc-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cuda-nvrtc-cu12 12.5.82 which is incompatible.
+torch 2.6.0+cu124 requires nvidia-cuda-runtime-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cuda-runtime-cu12 12.5.82 which is incompatible.
+torch 2.6.0+cu124 requires nvidia-cudnn-cu12==9.1.0.70; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cudnn-cu12 9.3.0.75 which is incompatible.
+torch 2.6.0+cu124 requires nvidia-cufft-cu12==11.2.1.3; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cufft-cu12 11.2.3.61 which is incompatible.
+torch 2.6.0+cu124 requires nvidia-curand-cu12==10.3.5.147; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-curand-cu12 10.3.6.82 which is incompatible.
+torch 2.6.0+cu124 requires nvidia-cusolver-cu12==11.6.1.9; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cusolver-cu12 11.6.3.83 which is incompatible.
+torch 2.6.0+cu124 requires nvidia-cusparse-cu12==12.3.1.170; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cusparse-cu12 12.5.1.3 which is incompatible.
+torch 2.6.0+cu124 requires nvidia-nvjitlink-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-nvjitlink-cu12 12.5.82 which is incompatible.
+gcsfs 2025.3.2 requires fsspec==2025.3.2, but you have fsspec 2025.3.0 which is incompatible.
+bigframes 2.8.0 requires google-cloud-bigquery[bqstorage,pandas]>=3.31.0, but you have google-cloud-bigquery 3.25.0 which is incompatible.
+bigframes 2.8.0 requires rich<14,>=12.4.4, but you have rich 14.0.0 which is incompatible.
+Successfully installed evaluate-0.4.5 fsspec-2025.3.0
+2025-07-11 08:28:36.136631: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1752222516.320437      36 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1752222516.373757      36 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+[nltk_data] Downloading package wordnet to /usr/share/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+[nltk_data] Downloading package omw-1.4 to /usr/share/nltk_data...
+tokenizer_config.json: 
+ 4.13k/? [00:00<00:00, 414kB/s]
+tokenizer.json: 
+ 2.06M/? [00:00<00:00, 32.4MB/s]
+special_tokens_map.json: 100%
+ 906/906 [00:00<00:00, 121kB/s]
+config.json: 100%
+ 928/928 [00:00<00:00, 125kB/s]
+model.safetensors.index.json: 
+ 25.6k/? [00:00<00:00, 2.90MB/s]
+Fetching 3 files: 100%
+ 3/3 [00:49<00:00, 20.65s/it]
+model-00003-of-00003.safetensors: 100%
+ 3.90G/3.90G [00:36<00:00, 97.0MB/s]
+model-00002-of-00003.safetensors: 100%
+ 4.83G/4.83G [00:49<00:00, 141MB/s]
+model-00001-of-00003.safetensors: 100%
+ 4.76G/4.76G [00:47<00:00, 200MB/s]
+Loading checkpoint shards: 100%
+ 3/3 [00:12<00:00,  4.43s/it]
+generation_config.json: 100%
+ 137/137 [00:00<00:00, 15.5kB/s]
+README.md: 
+ 7.62k/? [00:00<00:00, 822kB/s]
+train-00000-of-00001.parquet: 100%
+ 14.5M/14.5M [00:00<00:00, 99.6MB/s]
+validation-00000-of-00001.parquet: 100%
+ 1.82M/1.82M [00:00<00:00, 102MB/s]
+Generating train split: 100%
+ 87599/87599 [00:00<00:00, 369149.47 examples/s]
+Generating validation split: 100%
+ 10570/10570 [00:00<00:00, 213341.19 examples/s]
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+Building mask on train...
+Mask indices per layer: [[0, 39, 34, 10, 5, 15, 3, 1, 18, 12], [20, 21, 24, 30, 0, 23, 5, 25, 28, 19], [5, 17, 16, 35, 7, 27, 33, 24, 21, 12], [7, 1, 23, 15, 33, 9, 37, 39, 10, 22], [10, 32, 13, 9, 0, 19, 38, 26, 20, 5], [1, 4, 7, 31, 39, 13, 11, 17, 38, 18], [30, 23, 31, 22, 37, 25, 28, 7, 6, 16], [4, 13, 12, 10, 23, 34, 16, 8, 19, 5], [23, 28, 11, 31, 16, 24, 6, 3, 18, 14], [8, 29, 26, 20, 19, 34, 21, 33, 16, 14], [36, 19, 7, 31, 6, 37, 39, 17, 34, 10], [4, 1, 39, 9, 35, 25, 3, 22, 34, 37], [11, 13, 7, 17, 19, 2, 1, 26, 25, 0], [34, 39, 24, 1, 3, 27, 23, 21, 13, 30], [13, 39, 9, 32, 0, 26, 28, 1, 24, 3], [6, 13, 37, 4, 32, 27, 29, 15, 35, 3], [18, 26, 32, 29, 15, 5, 38, 4, 31, 19], [0, 23, 2, 14, 29, 9, 8, 33, 32, 30], [15, 16, 31, 24, 19, 26, 30, 20, 37, 2], [18, 11, 35, 32, 6, 0, 7, 33, 38, 39], [34, 9, 2, 7, 24, 13, 36, 32, 23, 16], [14, 8, 36, 5, 1, 31, 4, 15, 19, 17], [31, 4, 33, 18, 32, 5, 10, 2, 21, 23], [32, 31, 18, 11, 14, 27, 20, 10, 19, 2], [15, 8, 2, 9, 16, 0, 38, 29, 36, 13], [33, 39, 23, 22, 14, 9, 21, 38, 28, 1], [33, 30, 21, 14, 27, 32, 17, 18, 12, 7], [25, 14, 12, 0, 3, 33, 4, 11, 1, 19], [24, 10, 29, 23, 34, 26, 31, 11, 12, 16], [31, 14, 39, 32, 7, 35, 27, 15, 3, 25], [2, 33, 12, 32, 19, 9, 11, 31, 34, 38], [13, 8, 27, 39, 28, 25, 3, 5, 22, 17]]
+
+Masked routing & entropy:
+
+--- Masked Gating Entropy ---
+
+=== Gating Entropy per Layer ===
+Layer 0 (model.layers.0.block_sparse_moe.router.layer): avg entropy = 2.8419
+Layer 1 (model.layers.1.block_sparse_moe.router.layer): avg entropy = 3.0509
+Layer 2 (model.layers.2.block_sparse_moe.router.layer): avg entropy = 3.2400
+Layer 3 (model.layers.3.block_sparse_moe.router.layer): avg entropy = 3.2207
+Layer 4 (model.layers.4.block_sparse_moe.router.layer): avg entropy = 3.1772
+Layer 5 (model.layers.5.block_sparse_moe.router.layer): avg entropy = 3.2053
+Layer 6 (model.layers.6.block_sparse_moe.router.layer): avg entropy = 3.2092
+Layer 7 (model.layers.7.block_sparse_moe.router.layer): avg entropy = 3.1423
+Layer 8 (model.layers.8.block_sparse_moe.router.layer): avg entropy = 3.1752
+Layer 9 (model.layers.9.block_sparse_moe.router.layer): avg entropy = 3.1483
+Layer 10 (model.layers.10.block_sparse_moe.router.layer): avg entropy = 3.1861
+Layer 11 (model.layers.11.block_sparse_moe.router.layer): avg entropy = 3.1721
+Layer 12 (model.layers.12.block_sparse_moe.router.layer): avg entropy = 3.2516
+Layer 13 (model.layers.13.block_sparse_moe.router.layer): avg entropy = 3.2034
+Layer 14 (model.layers.14.block_sparse_moe.router.layer): avg entropy = 3.2063
+Layer 15 (model.layers.15.block_sparse_moe.router.layer): avg entropy = 3.1852
+Layer 16 (model.layers.16.block_sparse_moe.router.layer): avg entropy = 3.1848
+Layer 17 (model.layers.17.block_sparse_moe.router.layer): avg entropy = 3.1974
+Layer 18 (model.layers.18.block_sparse_moe.router.layer): avg entropy = 3.1675
+Layer 19 (model.layers.19.block_sparse_moe.router.layer): avg entropy = 3.2019
+Layer 20 (model.layers.20.block_sparse_moe.router.layer): avg entropy = 3.2517
+Layer 21 (model.layers.21.block_sparse_moe.router.layer): avg entropy = 3.2509
+Layer 22 (model.layers.22.block_sparse_moe.router.layer): avg entropy = 3.2373
+Layer 23 (model.layers.23.block_sparse_moe.router.layer): avg entropy = 3.1919
+Layer 24 (model.layers.24.block_sparse_moe.router.layer): avg entropy = 3.2231
+Layer 25 (model.layers.25.block_sparse_moe.router.layer): avg entropy = 3.2192
+Layer 26 (model.layers.26.block_sparse_moe.router.layer): avg entropy = 3.1611
+Layer 27 (model.layers.27.block_sparse_moe.router.layer): avg entropy = 3.2057
+Layer 28 (model.layers.28.block_sparse_moe.router.layer): avg entropy = 3.2020
+Layer 29 (model.layers.29.block_sparse_moe.router.layer): avg entropy = 3.1975
+Layer 30 (model.layers.30.block_sparse_moe.router.layer): avg entropy = 3.1563
+Layer 31 (model.layers.31.block_sparse_moe.router.layer): avg entropy = 3.1864
+Routing counts (masked): 100%
+ 500/500 [03:50<00:00,  2.16it/s]
+
+--- Masked Routing Distribution ---
+
+=== Routing Distribution & Entropy ===
+Layer 0: counts=[0, 0, 62500, 0, 50000, 0, 34000, 57500, 2000, 62000, 0, 24500, 0, 41000, 33500, 0, 22500, 43500, 0, 38500, 17500, 10000, 45500, 11000, 28500, 51500, 22500, 4500, 4500, 7500, 18000, 9000, 49500, 8000, 0, 31500, 14000, 61000, 54500, 0] entropy=3.179 (norm=0.862)
+Layer 1: counts=[0, 98489, 87000, 23000, 1500, 0, 10002, 0, 3500, 22500, 103112, 0, 0, 0, 6000, 28998, 500, 106498, 42889, 0, 0, 0, 115000, 0, 0, 0, 5775, 0, 0, 0, 0, 32500, 8500, 6000, 25999, 7013, 106500, 39500, 725, 38500] entropy=2.657 (norm=0.720)
+Layer 2: counts=[42406, 16503, 37738, 38032, 12221, 0, 29710, 0, 48430, 27713, 15997, 27855, 0, 16406, 19130, 19693, 0, 0, 26434, 49802, 21263, 0, 22321, 23613, 0, 33500, 41409, 0, 47372, 40404, 52599, 51680, 26769, 0, 28062, 0, 19486, 40680, 31719, 11053] entropy=3.321 (norm=0.900)
+Layer 3: counts=[24213, 0, 14988, 24968, 22843, 26650, 26669, 0, 62196, 0, 0, 49578, 42751, 27460, 17257, 0, 25029, 16654, 20298, 51943, 61785, 30246, 0, 0, 38025, 28791, 57330, 48091, 16885, 21274, 25437, 10527, 8000, 0, 53077, 32192, 20129, 0, 14714, 0] entropy=3.281 (norm=0.889)
+Layer 4: counts=[0, 36873, 55412, 500, 17974, 0, 16604, 35842, 4200, 0, 0, 18520, 41241, 0, 35458, 8250, 15613, 23963, 24954, 0, 0, 29010, 36725, 56439, 72481, 9500, 0, 29088, 29482, 77376, 27470, 22766, 0, 40078, 33477, 36950, 4986, 62112, 0, 16656] entropy=3.200 (norm=0.867)
+Layer 5: counts=[54473, 0, 71423, 39669, 0, 41337, 30938, 0, 41717, 55098, 49503, 0, 8850, 0, 23762, 10331, 51819, 0, 0, 48007, 1999, 18405, 13510, 24667, 29662, 34438, 28631, 14206, 14353, 35493, 1500, 0, 36970, 36928, 23441, 13581, 24999, 40290, 0, 0] entropy=3.233 (norm=0.876)
+Layer 6: counts=[26162, 28777, 18070, 25000, 7683, 12523, 0, 0, 31189, 3269, 82950, 41907, 42348, 38453, 21721, 24725, 0, 43451, 30968, 19818, 28888, 17656, 0, 0, 30175, 0, 49397, 26944, 0, 43194, 0, 0, 19739, 14866, 45454, 18053, 37911, 0, 69380, 19329] entropy=3.260 (norm=0.884)
+Layer 7: counts=[10914, 36271, 19188, 37647, 0, 0, 45243, 7556, 0, 10823, 0, 26186, 0, 0, 14823, 15102, 0, 29002, 18489, 0, 15249, 30479, 17034, 0, 30478, 10996, 36225, 45134, 37044, 34931, 38584, 8484, 84137, 42197, 0, 30025, 61315, 52241, 36689, 37514] entropy=3.254 (norm=0.882)
+Layer 8: counts=[43190, 40757, 29521, 0, 10106, 33632, 0, 30480, 40969, 76021, 13869, 0, 16751, 63298, 0, 7986, 0, 56403, 0, 26342, 23493, 17856, 39896, 0, 0, 24186, 36399, 7521, 0, 58085, 23529, 0, 30036, 30197, 20473, 37111, 17083, 22946, 16634, 25230] entropy=3.267 (norm=0.886)
+Layer 9: counts=[20193, 26353, 63383, 43340, 40299, 21829, 43772, 66565, 0, 11001, 27874, 11245, 76392, 18065, 0, 10081, 0, 27297, 39487, 0, 0, 0, 27869, 18370, 18609, 33637, 0, 50872, 30960, 0, 18627, 43129, 11639, 0, 0, 25300, 45233, 12061, 7555, 28963] entropy=3.248 (norm=0.880)
+Layer 10: counts=[17231, 23332, 19039, 40733, 20000, 6375, 0, 0, 21914, 19299, 0, 48020, 20452, 46685, 48515, 49943, 24827, 0, 26108, 0, 5271, 42617, 20352, 35029, 61227, 19454, 49965, 17396, 31615, 63222, 19371, 0, 35037, 46523, 0, 7169, 0, 0, 33279, 0] entropy=3.266 (norm=0.885)
+Layer 11: counts=[27971, 0, 60940, 0, 0, 24828, 6725, 30958, 39093, 0, 34654, 25830, 34265, 35930, 22537, 11432, 25951, 19797, 61176, 50093, 32048, 15159, 0, 51109, 39660, 0, 18521, 13124, 23490, 55242, 16183, 23173, 31040, 23113, 0, 0, 50311, 0, 15647, 0] entropy=3.290 (norm=0.892)
+Layer 12: counts=[0, 0, 0, 29724, 23185, 20249, 31362, 0, 29575, 46672, 15198, 0, 51665, 0, 24442, 21986, 62245, 0, 24192, 0, 17424, 21542, 27920, 22986, 43645, 0, 0, 43135, 24262, 16162, 20296, 18029, 53986, 22250, 41712, 28691, 33531, 31760, 45912, 26262] entropy=3.328 (norm=0.902)
+Layer 13: counts=[22389, 0, 27545, 0, 20933, 71764, 21485, 36746, 81805, 15465, 14761, 24800, 9791, 0, 9334, 51713, 52820, 22376, 40507, 17831, 11324, 0, 59891, 0, 0, 22974, 9841, 0, 16342, 15238, 0, 88989, 25309, 67170, 0, 27635, 7692, 11998, 13532, 0] entropy=3.162 (norm=0.857)
+Layer 14: counts=[0, 0, 18506, 0, 43433, 28346, 26401, 30089, 17994, 0, 10655, 84582, 44224, 0, 10208, 57755, 13694, 42156, 47741, 11675, 54486, 32439, 19004, 44850, 0, 57317, 0, 26250, 0, 19610, 13376, 11461, 0, 16506, 9582, 25598, 24191, 47664, 30207, 0] entropy=3.240 (norm=0.878)
+Layer 15: counts=[12367, 22365, 66595, 0, 0, 96978, 0, 94321, 23909, 9515, 38255, 13288, 11086, 0, 5390, 0, 60444, 52091, 49414, 11918, 66300, 22310, 11210, 15751, 31681, 21436, 6502, 0, 31517, 0, 5251, 59211, 0, 16184, 22719, 0, 2060, 0, 5862, 34070] entropy=3.076 (norm=0.834)
+Layer 16: counts=[47541, 22012, 37142, 71259, 0, 0, 32073, 14039, 28790, 15310, 28042, 15423, 22808, 27456, 55413, 0, 11781, 13038, 0, 0, 95117, 10634, 27721, 44237, 24778, 11591, 0, 2256, 25091, 0, 37543, 0, 0, 82376, 8710, 33259, 42482, 19311, 0, 12767] entropy=3.181 (norm=0.862)
+Layer 17: counts=[0, 81485, 0, 12292, 2355, 66403, 26927, 37413, 0, 0, 28486, 5925, 12027, 29554, 0, 84012, 28491, 17034, 34991, 7660, 5887, 48792, 4718, 0, 97367, 34152, 21365, 57657, 58114, 0, 0, 24183, 0, 0, 15399, 14993, 9326, 4817, 4452, 43723] entropy=3.069 (norm=0.832)
+Layer 18: counts=[9521, 113555, 0, 36598, 40785, 15778, 7389, 6196, 3530, 44249, 17220, 2298, 30647, 9474, 66419, 0, 0, 4229, 3616, 0, 0, 20907, 69924, 46772, 0, 27687, 0, 8716, 53137, 35284, 0, 0, 17517, 60573, 23534, 54126, 1996, 0, 38634, 49689] entropy=3.059 (norm=0.829)
+Layer 19: counts=[0, 7022, 25498, 37480, 20707, 85362, 0, 0, 9276, 11061, 11639, 0, 12864, 29866, 2810, 89216, 3639, 17719, 0, 11138, 104360, 16819, 7328, 17678, 22604, 7812, 28826, 15526, 32689, 56220, 79882, 53751, 0, 0, 14929, 0, 35560, 50719, 0, 0] entropy=3.057 (norm=0.829)
+Layer 20: counts=[22581, 26076, 0, 38777, 49544, 20943, 66999, 0, 41469, 0, 42095, 8631, 76756, 0, 6952, 15805, 0, 48643, 22915, 14299, 7903, 36741, 12390, 0, 0, 19405, 26344, 56343, 19249, 25296, 27347, 46643, 0, 17114, 0, 22859, 0, 39101, 41110, 19670] entropy=3.249 (norm=0.881)
+Layer 21: counts=[42484, 0, 22010, 26940, 0, 0, 20856, 51642, 0, 47377, 8628, 22319, 19341, 14666, 0, 0, 10755, 0, 46138, 0, 73943, 46788, 12498, 8827, 76445, 27736, 83719, 12281, 11514, 25663, 13842, 0, 20993, 11486, 29293, 26395, 0, 63672, 17101, 24648] entropy=3.190 (norm=0.865)
+Layer 22: counts=[58679, 19557, 0, 43923, 0, 0, 15609, 14323, 14599, 27870, 0, 19576, 6510, 23663, 101158, 13742, 12898, 48117, 0, 12535, 11943, 0, 10106, 0, 18101, 14884, 5626, 35980, 33509, 93433, 85593, 0, 0, 0, 31853, 28709, 28825, 15106, 17672, 55901] entropy=3.126 (norm=0.847)
+Layer 23: counts=[39854, 33036, 0, 33718, 21555, 23536, 31366, 40950, 22656, 35589, 0, 0, 30820, 26341, 0, 43877, 19337, 7777, 0, 0, 0, 17521, 42470, 52143, 13585, 27187, 22039, 0, 42341, 12911, 9608, 0, 0, 8939, 40731, 41555, 35418, 55895, 48220, 39025] entropy=3.303 (norm=0.895)
+Layer 24: counts=[0, 41495, 0, 6898, 32117, 22955, 60762, 29533, 0, 0, 22721, 26437, 13553, 0, 24171, 0, 0, 21362, 39785, 23259, 60281, 12862, 14900, 27828, 30443, 29992, 46364, 21939, 14882, 0, 51362, 29180, 65031, 10584, 33194, 69464, 0, 17871, 0, 18775] entropy=3.265 (norm=0.885)
+Layer 25: counts=[28754, 0, 41139, 21200, 50642, 35121, 26847, 40219, 43282, 0, 8555, 19684, 14619, 59815, 0, 27037, 41003, 23370, 41843, 17830, 11138, 0, 0, 0, 73910, 11531, 36246, 18212, 0, 18458, 16490, 33247, 40738, 0, 33667, 16337, 33228, 35838, 0, 0] entropy=3.288 (norm=0.891)
+Layer 26: counts=[26594, 36283, 19812, 30092, 8396, 15624, 18611, 0, 54344, 13587, 40566, 47151, 0, 50792, 0, 23502, 48692, 0, 0, 7499, 33295, 0, 19573, 22323, 12694, 12493, 36439, 0, 25799, 72134, 0, 20501, 0, 0, 103035, 19023, 20716, 21184, 49554, 9692] entropy=3.208 (norm=0.870)
+Layer 27: counts=[0, 0, 13684, 0, 0, 36359, 47010, 12468, 7003, 47868, 4421, 0, 0, 41339, 0, 16343, 18055, 19400, 19467, 0, 37715, 95887, 63942, 21880, 29451, 0, 10077, 22183, 38883, 37801, 43585, 20020, 110290, 0, 8230, 29715, 2557, 10409, 11798, 42160] entropy=3.123 (norm=0.847)
+Layer 28: counts=[48066, 49208, 13495, 56990, 11243, 40142, 14588, 21408, 16537, 12355, 0, 0, 0, 14834, 53452, 53252, 0, 26943, 55552, 29032, 9345, 12740, 23741, 0, 0, 20878, 0, 89334, 12631, 0, 33292, 0, 18462, 27487, 0, 21771, 21251, 45566, 46510, 19895] entropy=3.231 (norm=0.876)
+Layer 29: counts=[41133, 53502, 24497, 0, 31839, 17307, 71814, 0, 30497, 19196, 68661, 30159, 20944, 24321, 0, 0, 39084, 11331, 34649, 50269, 5379, 46307, 19295, 29306, 25994, 0, 31617, 0, 44984, 23529, 29420, 0, 0, 19340, 18073, 0, 35072, 17957, 4524, 0] entropy=3.269 (norm=0.886)
+Layer 30: counts=[23727, 12685, 0, 55855, 17624, 47160, 72321, 5680, 39361, 0, 66525, 0, 0, 28339, 15244, 36405, 14891, 22026, 6502, 0, 52874, 9447, 51748, 30682, 15489, 48413, 17518, 16833, 16852, 4776, 14888, 0, 0, 0, 0, 94556, 31557, 27360, 0, 22662] entropy=3.173 (norm=0.860)
+Layer 31: counts=[7880, 35073, 93772, 0, 15094, 0, 12372, 56105, 0, 44355, 35552, 22968, 36459, 0, 18209, 32957, 78385, 0, 12973, 79676, 7118, 40744, 0, 13486, 27659, 0, 12421, 0, 0, 14280, 8529, 4212, 5529, 96059, 24104, 16294, 21782, 25103, 20850, 0] entropy=3.105 (norm=0.842)
+
+=== Routing Distribution & Entropy ===
+Layer 0: counts=[0, 0, 62500, 0, 50000, 0, 34000, 57500, 2000, 62000, 0, 24500, 0, 41000, 33500, 0, 22500, 43500, 0, 38500, 17500, 10000, 45500, 11000, 28500, 51500, 22500, 4500, 4500, 7500, 18000, 9000, 49500, 8000, 0, 31500, 14000, 61000, 54500, 0] entropy=3.179 (norm=0.862)
+Layer 1: counts=[0, 98489, 87000, 23000, 1500, 0, 10002, 0, 3500, 22500, 103112, 0, 0, 0, 6000, 28998, 500, 106498, 42889, 0, 0, 0, 115000, 0, 0, 0, 5775, 0, 0, 0, 0, 32500, 8500, 6000, 25999, 7013, 106500, 39500, 725, 38500] entropy=2.657 (norm=0.720)
+Layer 2: counts=[42406, 16503, 37738, 38032, 12221, 0, 29710, 0, 48430, 27713, 15997, 27855, 0, 16406, 19130, 19693, 0, 0, 26434, 49802, 21263, 0, 22321, 23613, 0, 33500, 41409, 0, 47372, 40404, 52599, 51680, 26769, 0, 28062, 0, 19486, 40680, 31719, 11053] entropy=3.321 (norm=0.900)
+Layer 3: counts=[24213, 0, 14988, 24968, 22843, 26650, 26669, 0, 62196, 0, 0, 49578, 42751, 27460, 17257, 0, 25029, 16654, 20298, 51943, 61785, 30246, 0, 0, 38025, 28791, 57330, 48091, 16885, 21274, 25437, 10527, 8000, 0, 53077, 32192, 20129, 0, 14714, 0] entropy=3.281 (norm=0.889)
+Layer 4: counts=[0, 36873, 55412, 500, 17974, 0, 16604, 35842, 4200, 0, 0, 18520, 41241, 0, 35458, 8250, 15613, 23963, 24954, 0, 0, 29010, 36725, 56439, 72481, 9500, 0, 29088, 29482, 77376, 27470, 22766, 0, 40078, 33477, 36950, 4986, 62112, 0, 16656] entropy=3.200 (norm=0.867)
+Layer 5: counts=[54473, 0, 71423, 39669, 0, 41337, 30938, 0, 41717, 55098, 49503, 0, 8850, 0, 23762, 10331, 51819, 0, 0, 48007, 1999, 18405, 13510, 24667, 29662, 34438, 28631, 14206, 14353, 35493, 1500, 0, 36970, 36928, 23441, 13581, 24999, 40290, 0, 0] entropy=3.233 (norm=0.876)
+Layer 6: counts=[26162, 28777, 18070, 25000, 7683, 12523, 0, 0, 31189, 3269, 82950, 41907, 42348, 38453, 21721, 24725, 0, 43451, 30968, 19818, 28888, 17656, 0, 0, 30175, 0, 49397, 26944, 0, 43194, 0, 0, 19739, 14866, 45454, 18053, 37911, 0, 69380, 19329] entropy=3.260 (norm=0.884)
+Layer 7: counts=[10914, 36271, 19188, 37647, 0, 0, 45243, 7556, 0, 10823, 0, 26186, 0, 0, 14823, 15102, 0, 29002, 18489, 0, 15249, 30479, 17034, 0, 30478, 10996, 36225, 45134, 37044, 34931, 38584, 8484, 84137, 42197, 0, 30025, 61315, 52241, 36689, 37514] entropy=3.254 (norm=0.882)
+Layer 8: counts=[43190, 40757, 29521, 0, 10106, 33632, 0, 30480, 40969, 76021, 13869, 0, 16751, 63298, 0, 7986, 0, 56403, 0, 26342, 23493, 17856, 39896, 0, 0, 24186, 36399, 7521, 0, 58085, 23529, 0, 30036, 30197, 20473, 37111, 17083, 22946, 16634, 25230] entropy=3.267 (norm=0.886)
+Layer 9: counts=[20193, 26353, 63383, 43340, 40299, 21829, 43772, 66565, 0, 11001, 27874, 11245, 76392, 18065, 0, 10081, 0, 27297, 39487, 0, 0, 0, 27869, 18370, 18609, 33637, 0, 50872, 30960, 0, 18627, 43129, 11639, 0, 0, 25300, 45233, 12061, 7555, 28963] entropy=3.248 (norm=0.880)
+Layer 10: counts=[17231, 23332, 19039, 40733, 20000, 6375, 0, 0, 21914, 19299, 0, 48020, 20452, 46685, 48515, 49943, 24827, 0, 26108, 0, 5271, 42617, 20352, 35029, 61227, 19454, 49965, 17396, 31615, 63222, 19371, 0, 35037, 46523, 0, 7169, 0, 0, 33279, 0] entropy=3.266 (norm=0.885)
+Layer 11: counts=[27971, 0, 60940, 0, 0, 24828, 6725, 30958, 39093, 0, 34654, 25830, 34265, 35930, 22537, 11432, 25951, 19797, 61176, 50093, 32048, 15159, 0, 51109, 39660, 0, 18521, 13124, 23490, 55242, 16183, 23173, 31040, 23113, 0, 0, 50311, 0, 15647, 0] entropy=3.290 (norm=0.892)
+Layer 12: counts=[0, 0, 0, 29724, 23185, 20249, 31362, 0, 29575, 46672, 15198, 0, 51665, 0, 24442, 21986, 62245, 0, 24192, 0, 17424, 21542, 27920, 22986, 43645, 0, 0, 43135, 24262, 16162, 20296, 18029, 53986, 22250, 41712, 28691, 33531, 31760, 45912, 26262] entropy=3.328 (norm=0.902)
+Layer 13: counts=[22389, 0, 27545, 0, 20933, 71764, 21485, 36746, 81805, 15465, 14761, 24800, 9791, 0, 9334, 51713, 52820, 22376, 40507, 17831, 11324, 0, 59891, 0, 0, 22974, 9841, 0, 16342, 15238, 0, 88989, 25309, 67170, 0, 27635, 7692, 11998, 13532, 0] entropy=3.162 (norm=0.857)
+Layer 14: counts=[0, 0, 18506, 0, 43433, 28346, 26401, 30089, 17994, 0, 10655, 84582, 44224, 0, 10208, 57755, 13694, 42156, 47741, 11675, 54486, 32439, 19004, 44850, 0, 57317, 0, 26250, 0, 19610, 13376, 11461, 0, 16506, 9582, 25598, 24191, 47664, 30207, 0] entropy=3.240 (norm=0.878)
+Layer 15: counts=[12367, 22365, 66595, 0, 0, 96978, 0, 94321, 23909, 9515, 38255, 13288, 11086, 0, 5390, 0, 60444, 52091, 49414, 11918, 66300, 22310, 11210, 15751, 31681, 21436, 6502, 0, 31517, 0, 5251, 59211, 0, 16184, 22719, 0, 2060, 0, 5862, 34070] entropy=3.076 (norm=0.834)
+Layer 16: counts=[47541, 22012, 37142, 71259, 0, 0, 32073, 14039, 28790, 15310, 28042, 15423, 22808, 27456, 55413, 0, 11781, 13038, 0, 0, 95117, 10634, 27721, 44237, 24778, 11591, 0, 2256, 25091, 0, 37543, 0, 0, 82376, 8710, 33259, 42482, 19311, 0, 12767] entropy=3.181 (norm=0.862)
+Layer 17: counts=[0, 81485, 0, 12292, 2355, 66403, 26927, 37413, 0, 0, 28486, 5925, 12027, 29554, 0, 84012, 28491, 17034, 34991, 7660, 5887, 48792, 4718, 0, 97367, 34152, 21365, 57657, 58114, 0, 0, 24183, 0, 0, 15399, 14993, 9326, 4817, 4452, 43723] entropy=3.069 (norm=0.832)
+Layer 18: counts=[9521, 113555, 0, 36598, 40785, 15778, 7389, 6196, 3530, 44249, 17220, 2298, 30647, 9474, 66419, 0, 0, 4229, 3616, 0, 0, 20907, 69924, 46772, 0, 27687, 0, 8716, 53137, 35284, 0, 0, 17517, 60573, 23534, 54126, 1996, 0, 38634, 49689] entropy=3.059 (norm=0.829)
+Layer 19: counts=[0, 7022, 25498, 37480, 20707, 85362, 0, 0, 9276, 11061, 11639, 0, 12864, 29866, 2810, 89216, 3639, 17719, 0, 11138, 104360, 16819, 7328, 17678, 22604, 7812, 28826, 15526, 32689, 56220, 79882, 53751, 0, 0, 14929, 0, 35560, 50719, 0, 0] entropy=3.057 (norm=0.829)
+Layer 20: counts=[22581, 26076, 0, 38777, 49544, 20943, 66999, 0, 41469, 0, 42095, 8631, 76756, 0, 6952, 15805, 0, 48643, 22915, 14299, 7903, 36741, 12390, 0, 0, 19405, 26344, 56343, 19249, 25296, 27347, 46643, 0, 17114, 0, 22859, 0, 39101, 41110, 19670] entropy=3.249 (norm=0.881)
+Layer 21: counts=[42484, 0, 22010, 26940, 0, 0, 20856, 51642, 0, 47377, 8628, 22319, 19341, 14666, 0, 0, 10755, 0, 46138, 0, 73943, 46788, 12498, 8827, 76445, 27736, 83719, 12281, 11514, 25663, 13842, 0, 20993, 11486, 29293, 26395, 0, 63672, 17101, 24648] entropy=3.190 (norm=0.865)
+Layer 22: counts=[58679, 19557, 0, 43923, 0, 0, 15609, 14323, 14599, 27870, 0, 19576, 6510, 23663, 101158, 13742, 12898, 48117, 0, 12535, 11943, 0, 10106, 0, 18101, 14884, 5626, 35980, 33509, 93433, 85593, 0, 0, 0, 31853, 28709, 28825, 15106, 17672, 55901] entropy=3.126 (norm=0.847)
+Layer 23: counts=[39854, 33036, 0, 33718, 21555, 23536, 31366, 40950, 22656, 35589, 0, 0, 30820, 26341, 0, 43877, 19337, 7777, 0, 0, 0, 17521, 42470, 52143, 13585, 27187, 22039, 0, 42341, 12911, 9608, 0, 0, 8939, 40731, 41555, 35418, 55895, 48220, 39025] entropy=3.303 (norm=0.895)
+Layer 24: counts=[0, 41495, 0, 6898, 32117, 22955, 60762, 29533, 0, 0, 22721, 26437, 13553, 0, 24171, 0, 0, 21362, 39785, 23259, 60281, 12862, 14900, 27828, 30443, 29992, 46364, 21939, 14882, 0, 51362, 29180, 65031, 10584, 33194, 69464, 0, 17871, 0, 18775] entropy=3.265 (norm=0.885)
+Layer 25: counts=[28754, 0, 41139, 21200, 50642, 35121, 26847, 40219, 43282, 0, 8555, 19684, 14619, 59815, 0, 27037, 41003, 23370, 41843, 17830, 11138, 0, 0, 0, 73910, 11531, 36246, 18212, 0, 18458, 16490, 33247, 40738, 0, 33667, 16337, 33228, 35838, 0, 0] entropy=3.288 (norm=0.891)
+Layer 26: counts=[26594, 36283, 19812, 30092, 8396, 15624, 18611, 0, 54344, 13587, 40566, 47151, 0, 50792, 0, 23502, 48692, 0, 0, 7499, 33295, 0, 19573, 22323, 12694, 12493, 36439, 0, 25799, 72134, 0, 20501, 0, 0, 103035, 19023, 20716, 21184, 49554, 9692] entropy=3.208 (norm=0.870)
+Layer 27: counts=[0, 0, 13684, 0, 0, 36359, 47010, 12468, 7003, 47868, 4421, 0, 0, 41339, 0, 16343, 18055, 19400, 19467, 0, 37715, 95887, 63942, 21880, 29451, 0, 10077, 22183, 38883, 37801, 43585, 20020, 110290, 0, 8230, 29715, 2557, 10409, 11798, 42160] entropy=3.123 (norm=0.847)
+Layer 28: counts=[48066, 49208, 13495, 56990, 11243, 40142, 14588, 21408, 16537, 12355, 0, 0, 0, 14834, 53452, 53252, 0, 26943, 55552, 29032, 9345, 12740, 23741, 0, 0, 20878, 0, 89334, 12631, 0, 33292, 0, 18462, 27487, 0, 21771, 21251, 45566, 46510, 19895] entropy=3.231 (norm=0.876)
+Layer 29: counts=[41133, 53502, 24497, 0, 31839, 17307, 71814, 0, 30497, 19196, 68661, 30159, 20944, 24321, 0, 0, 39084, 11331, 34649, 50269, 5379, 46307, 19295, 29306, 25994, 0, 31617, 0, 44984, 23529, 29420, 0, 0, 19340, 18073, 0, 35072, 17957, 4524, 0] entropy=3.269 (norm=0.886)
+Layer 30: counts=[23727, 12685, 0, 55855, 17624, 47160, 72321, 5680, 39361, 0, 66525, 0, 0, 28339, 15244, 36405, 14891, 22026, 6502, 0, 52874, 9447, 51748, 30682, 15489, 48413, 17518, 16833, 16852, 4776, 14888, 0, 0, 0, 0, 94556, 31557, 27360, 0, 22662] entropy=3.173 (norm=0.860)
+Layer 31: counts=[7880, 35073, 93772, 0, 15094, 0, 12372, 56105, 0, 44355, 35552, 22968, 36459, 0, 18209, 32957, 78385, 0, 12973, 79676, 7118, 40744, 0, 13486, 27659, 0, 12421, 0, 0, 14280, 8529, 4212, 5529, 96059, 24104, 16294, 21782, 25103, 20850, 0] entropy=3.105 (norm=0.842)
+
+Masked eval:
+Downloading builder script: 
+ 4.53k/? [00:00<00:00, 474kB/s]
+Downloading extra modules: 
+ 3.32k/? [00:00<00:00, 408kB/s]
+Eval QA: 100%
+ 500/500 [58:12<00:00,  6.59s/it]
+Exact Match: 0.00  F1: 5.82
+
+Baseline routing & entropy:
+
+--- Baseline Gating Entropy ---
+
+=== Gating Entropy per Layer ===
+Layer 0 (model.layers.0.block_sparse_moe.router.layer): avg entropy = 2.9794
+Layer 1 (model.layers.1.block_sparse_moe.router.layer): avg entropy = 2.6142
+Layer 2 (model.layers.2.block_sparse_moe.router.layer): avg entropy = 3.3298
+Layer 3 (model.layers.3.block_sparse_moe.router.layer): avg entropy = 3.4079
+Layer 4 (model.layers.4.block_sparse_moe.router.layer): avg entropy = 3.3812
+Layer 5 (model.layers.5.block_sparse_moe.router.layer): avg entropy = 3.4275
+Layer 6 (model.layers.6.block_sparse_moe.router.layer): avg entropy = 3.4498
+Layer 7 (model.layers.7.block_sparse_moe.router.layer): avg entropy = 3.4579
+Layer 8 (model.layers.8.block_sparse_moe.router.layer): avg entropy = 3.4341
+Layer 9 (model.layers.9.block_sparse_moe.router.layer): avg entropy = 3.4244
+Layer 10 (model.layers.10.block_sparse_moe.router.layer): avg entropy = 3.4639
+Layer 11 (model.layers.11.block_sparse_moe.router.layer): avg entropy = 3.4292
+Layer 12 (model.layers.12.block_sparse_moe.router.layer): avg entropy = 3.4254
+Layer 13 (model.layers.13.block_sparse_moe.router.layer): avg entropy = 3.4271
+Layer 14 (model.layers.14.block_sparse_moe.router.layer): avg entropy = 3.4590
+Layer 15 (model.layers.15.block_sparse_moe.router.layer): avg entropy = 3.4312
+Layer 16 (model.layers.16.block_sparse_moe.router.layer): avg entropy = 3.3906
+Layer 17 (model.layers.17.block_sparse_moe.router.layer): avg entropy = 3.4073
+Layer 18 (model.layers.18.block_sparse_moe.router.layer): avg entropy = 3.4060
+Layer 19 (model.layers.19.block_sparse_moe.router.layer): avg entropy = 3.4445
+Layer 20 (model.layers.20.block_sparse_moe.router.layer): avg entropy = 3.4292
+Layer 21 (model.layers.21.block_sparse_moe.router.layer): avg entropy = 3.4063
+Layer 22 (model.layers.22.block_sparse_moe.router.layer): avg entropy = 3.4103
+Layer 23 (model.layers.23.block_sparse_moe.router.layer): avg entropy = 3.2962
+Layer 24 (model.layers.24.block_sparse_moe.router.layer): avg entropy = 3.3424
+Layer 25 (model.layers.25.block_sparse_moe.router.layer): avg entropy = 3.3560
+Layer 26 (model.layers.26.block_sparse_moe.router.layer): avg entropy = 3.2853
+Layer 27 (model.layers.27.block_sparse_moe.router.layer): avg entropy = 3.3151
+Layer 28 (model.layers.28.block_sparse_moe.router.layer): avg entropy = 3.3192
+Layer 29 (model.layers.29.block_sparse_moe.router.layer): avg entropy = 3.3404
+Layer 30 (model.layers.30.block_sparse_moe.router.layer): avg entropy = 3.3310
+Layer 31 (model.layers.31.block_sparse_moe.router.layer): avg entropy = 3.3129
+Routing counts (baseline): 100%
+ 500/500 [04:26<00:00,  1.85it/s]
+
+--- Baseline Routing Distribution ---
+
+=== Routing Distribution & Entropy ===
+Layer 0: counts=[73500, 45500, 28500, 43000, 39500, 40000, 11000, 26500, 0, 31000, 49500, 3000, 42000, 33500, 11000, 47500, 5500, 38500, 50000, 12500, 5000, 2000, 34500, 500, 0, 25000, 5000, 1500, 2000, 1500, 2000, 2000, 9500, 3500, 53000, 2500, 5000, 30500, 37000, 66500] entropy=3.231 (norm=0.876)
+Layer 1: counts=[109500, 3500, 31465, 0, 0, 36500, 0, 0, 0, 0, 12500, 0, 0, 0, 0, 500, 0, 15500, 1500, 33535, 115000, 115000, 14000, 106500, 115000, 30373, 0, 0, 43000, 0, 115000, 3500, 0, 0, 2127, 0, 15500, 500, 0, 0] entropy=2.497 (norm=0.677)
+Layer 2: counts=[12682, 11659, 26996, 24490, 6943, 115000, 16000, 43602, 11993, 23593, 983, 9509, 25002, 8159, 4000, 12000, 60438, 81398, 15500, 24321, 6495, 23596, 13685, 8502, 24591, 21000, 18305, 29548, 26225, 22500, 33507, 11244, 9000, 21000, 9974, 53060, 11000, 22000, 16000, 4500] entropy=3.367 (norm=0.913)
+Layer 3: counts=[23998, 38000, 18503, 19000, 15000, 17795, 11820, 115000, 27463, 19570, 31153, 28423, 28074, 18477, 13455, 44148, 21816, 12350, 13000, 20958, 9431, 21903, 32870, 35586, 12500, 10333, 19935, 30516, 10522, 11274, 17565, 3012, 8000, 40500, 24414, 19923, 13500, 19137, 8876, 32200] entropy=3.487 (norm=0.945)
+Layer 4: counts=[44000, 12500, 42416, 0, 13848, 26475, 15014, 24040, 1500, 27500, 46575, 17005, 25211, 37487, 27129, 2500, 9100, 10525, 12066, 29999, 28500, 24423, 18669, 40000, 27549, 12499, 36760, 19500, 19500, 18500, 8977, 19455, 36549, 36118, 30676, 34473, 5994, 38005, 32995, 5968] entropy=3.516 (norm=0.953)
+Layer 5: counts=[27899, 43071, 22538, 22500, 50036, 12395, 19078, 43857, 8954, 15113, 21577, 44990, 5493, 37606, 22451, 12500, 24281, 33677, 26481, 29100, 5158, 14381, 27237, 16500, 32579, 24005, 29290, 10996, 10500, 3557, 9962, 40685, 29501, 24961, 14016, 11554, 10499, 15988, 23605, 41429] entropy=3.548 (norm=0.962)
+Layer 6: counts=[7830, 19513, 17569, 30574, 6506, 14967, 30846, 21178, 18034, 3500, 10140, 38535, 24327, 34195, 14088, 22500, 25052, 19000, 25500, 6500, 25452, 10500, 30500, 38500, 22547, 44363, 19500, 29959, 22577, 26382, 52194, 30089, 22021, 2372, 28464, 23691, 42216, 27885, 18323, 12111] entropy=3.563 (norm=0.966)
+Layer 7: counts=[8278, 25868, 16514, 34933, 76042, 19540, 16991, 13355, 21909, 10003, 32514, 22625, 46098, 19674, 11422, 20209, 40042, 9317, 14875, 19648, 9127, 13929, 4274, 23030, 33861, 15563, 27738, 22854, 27014, 23500, 24055, 7000, 33767, 16205, 29215, 17724, 25838, 45299, 23697, 16453] entropy=3.549 (norm=0.962)
+Layer 8: counts=[23248, 32655, 34085, 34878, 11106, 19775, 29231, 31303, 19236, 593, 22876, 24250, 19500, 890, 24806, 14792, 32896, 7414, 32038, 12044, 33041, 10923, 10410, 48048, 18273, 23265, 17857, 3261, 73901, 21126, 29959, 30045, 26361, 30031, 16495, 21000, 22715, 16937, 15513, 23223] entropy=3.531 (norm=0.957)
+Layer 9: counts=[17030, 15137, 21122, 36816, 27218, 18083, 17687, 20646, 51642, 14045, 12592, 6927, 10983, 20625, 28762, 4107, 37709, 19887, 27444, 34654, 23000, 35520, 23669, 6936, 20670, 33319, 42614, 7995, 33110, 60428, 11394, 24231, 9928, 23438, 47786, 26898, 4494, 16416, 6880, 18158] entropy=3.531 (norm=0.957)
+Layer 10: counts=[14329, 14174, 9077, 21158, 17912, 5127, 38105, 49292, 0, 15916, 24148, 13174, 19559, 27804, 28753, 14634, 18345, 34307, 21315, 49191, 9219, 37524, 23681, 25032, 1725, 8815, 24000, 8958, 15732, 71351, 9799, 39762, 18796, 16983, 27028, 9491, 44488, 16925, 26042, 48329] entropy=3.486 (norm=0.945)
+Layer 11: counts=[13682, 26783, 31859, 19347, 44310, 827, 3785, 18537, 34244, 42096, 25795, 29149, 9780, 25580, 27161, 9682, 13001, 18706, 18369, 45715, 29522, 16100, 61399, 21519, 25004, 58581, 8427, 15386, 28228, 52499, 11065, 2003, 26117, 5011, 4872, 22906, 5999, 6287, 27434, 33233] entropy=3.469 (norm=0.940)
+Layer 12: counts=[31523, 35612, 25864, 16799, 12315, 6508, 24502, 21694, 23387, 25194, 12000, 65071, 4338, 47245, 19842, 17046, 6331, 58636, 34066, 42389, 16016, 13520, 24541, 8082, 28355, 27484, 22800, 21635, 30150, 59, 15495, 9677, 18075, 22500, 14490, 28492, 19929, 18985, 33804, 15549] entropy=3.523 (norm=0.955)
+Layer 13: counts=[14688, 62534, 20219, 16759, 16561, 23546, 36742, 13500, 32402, 18057, 24134, 10670, 9309, 16912, 17891, 29582, 19185, 14997, 20179, 18498, 14729, 39781, 34272, 28871, 40334, 20555, 24977, 38188, 7422, 7509, 19589, 13472, 18466, 30970, 37984, 27552, 34650, 11009, 7950, 25355] entropy=3.575 (norm=0.969)
+Layer 14: counts=[30526, 41080, 12515, 54534, 28125, 24991, 20131, 21097, 8468, 28711, 2387, 15819, 25266, 15240, 10217, 57711, 3500, 16258, 9278, 11872, 27175, 36138, 29590, 28348, 35317, 32832, 47022, 30920, 14895, 9119, 16971, 20479, 22762, 13301, 20817, 19061, 17853, 16576, 20217, 22881] entropy=3.548 (norm=0.962)
+Layer 15: counts=[12377, 25713, 42989, 26013, 4989, 24061, 42901, 105079, 7132, 5000, 18028, 8019, 12502, 58394, 5629, 57789, 48040, 22952, 8161, 14677, 5861, 28435, 18054, 31748, 30112, 23466, 7872, 40011, 17277, 10679, 8195, 11672, 12899, 10652, 27026, 21290, 2474, 27213, 10304, 24315] entropy=3.401 (norm=0.922)
+Layer 16: counts=[78079, 12054, 20607, 24793, 14590, 32734, 14500, 12650, 20418, 23442, 32000, 23601, 19772, 18460, 10672, 48744, 9162, 7392, 46772, 25771, 17940, 12262, 13520, 17061, 22748, 6001, 52874, 638, 19968, 26915, 22840, 5002, 40544, 40563, 22767, 12690, 22797, 10500, 47753, 8404] entropy=3.486 (norm=0.945)
+Layer 17: counts=[49351, 72948, 49896, 22977, 10517, 34357, 21127, 10174, 21280, 18334, 20055, 8560, 1515, 10816, 44514, 11733, 21000, 20636, 45003, 7964, 4215, 23366, 3000, 12477, 31211, 15589, 11000, 24372, 31152, 38860, 25582, 34034, 36598, 29764, 34567, 18709, 4556, 19945, 6747, 11499] entropy=3.475 (norm=0.942)
+Layer 18: counts=[7582, 28036, 27909, 15243, 41156, 11209, 7615, 10081, 357, 28165, 12492, 6353, 27339, 10910, 19666, 32900, 51436, 7434, 6504, 52527, 29342, 11661, 22109, 22988, 34617, 14733, 42490, 12398, 10558, 15089, 24977, 78812, 24092, 27919, 34163, 12024, 6316, 27062, 34157, 29579] entropy=3.476 (norm=0.942)
+Layer 19: counts=[20687, 7714, 7785, 41204, 40027, 17832, 33882, 39513, 14756, 19869, 10233, 64407, 17711, 17651, 10998, 6432, 7465, 19403, 23090, 16079, 32937, 16002, 13941, 19687, 4503, 15164, 18989, 11780, 20631, 16627, 18334, 21560, 31227, 28515, 18255, 49129, 13235, 33413, 46503, 52830] entropy=3.525 (norm=0.956)
+Layer 20: counts=[23848, 13395, 42334, 38519, 19203, 12566, 21282, 75667, 39615, 39933, 20044, 10198, 12929, 24096, 5353, 28594, 17146, 18390, 17096, 14361, 1499, 29594, 17500, 27134, 20934, 15480, 9324, 7062, 16940, 22511, 16501, 35744, 32923, 25262, 10450, 23246, 42393, 15438, 38303, 17193] entropy=3.533 (norm=0.958)
+Layer 21: counts=[22174, 21857, 11696, 8075, 37018, 37217, 19755, 28512, 45399, 5238, 8881, 9544, 2069, 16995, 30427, 41894, 8186, 46458, 18040, 35178, 37651, 43126, 13391, 1322, 28408, 28270, 30204, 18440, 6524, 11286, 26005, 49520, 14918, 14349, 10039, 18392, 46533, 33499, 21039, 12471] entropy=3.503 (norm=0.950)
+Layer 22: counts=[54336, 21231, 7312, 30512, 31978, 38499, 15389, 14532, 3996, 14994, 15377, 7390, 5587, 37696, 89195, 20560, 12063, 51454, 23484, 14017, 4008, 20905, 3833, 17262, 9427, 1047, 5963, 28999, 24589, 64013, 27267, 29863, 48748, 60046, 17410, 9742, 14487, 3547, 13000, 6242] entropy=3.375 (norm=0.915)
+Layer 23: counts=[37611, 8071, 28188, 14106, 14007, 21338, 20503, 33162, 18991, 12247, 43140, 11349, 7133, 22029, 33005, 32961, 11896, 9701, 58073, 27170, 45180, 11273, 24162, 34115, 7809, 32568, 12487, 42178, 19773, 5137, 5912, 31363, 78938, 7971, 16897, 24494, 14659, 12320, 14942, 13141] entropy=3.493 (norm=0.947)
+Layer 24: counts=[43867, 18529, 55020, 7050, 56431, 13252, 18443, 15547, 37017, 29362, 17053, 14968, 11637, 24204, 15868, 40750, 24681, 13484, 13905, 10573, 49196, 502, 13421, 21813, 24493, 8765, 25484, 16760, 6009, 25306, 31792, 11628, 43269, 15069, 24341, 28735, 23531, 4957, 52091, 11197] entropy=3.503 (norm=0.950)
+Layer 25: counts=[15367, 9878, 42835, 14554, 34148, 25410, 20929, 22407, 27016, 33599, 5172, 8179, 14559, 10435, 43498, 10332, 18603, 15990, 33798, 8958, 8338, 13872, 39092, 44878, 24129, 11597, 25975, 14863, 33149, 16213, 19889, 15952, 17347, 34571, 30232, 26209, 23684, 13768, 31474, 59101] entropy=3.556 (norm=0.964)
+Layer 26: counts=[18498, 27646, 8172, 21303, 11572, 14873, 16181, 14345, 18921, 14521, 29000, 31083, 24480, 39804, 35033, 23438, 11702, 25914, 30566, 2902, 10307, 44587, 9442, 12758, 24271, 10770, 19264, 28939, 13007, 29929, 28418, 8933, 39443, 39654, 111346, 13965, 15458, 13699, 19313, 6543] entropy=3.480 (norm=0.943)
+Layer 27: counts=[48565, 20557, 16666, 92024, 20482, 20962, 24243, 14678, 25874, 40035, 5148, 24671, 10474, 11231, 37976, 16459, 21798, 12106, 16622, 14126, 27938, 46050, 34146, 7299, 19465, 22966, 12850, 15392, 9934, 15245, 29213, 16454, 44127, 44003, 10156, 13316, 12460, 9006, 12222, 23061] entropy=3.502 (norm=0.949)
+Layer 28: counts=[29198, 13216, 15036, 34281, 14417, 37543, 20197, 10540, 19481, 4057, 23966, 29000, 41840, 17329, 28010, 39701, 29900, 23731, 25363, 19279, 12714, 17815, 25110, 42036, 20425, 25884, 20386, 29227, 13138, 27066, 15965, 29752, 7274, 18981, 41443, 21410, 16771, 27552, 20454, 10512] entropy=3.602 (norm=0.977)
+Layer 29: counts=[24380, 20958, 11821, 37703, 25152, 14478, 27948, 28048, 10405, 14352, 35178, 22731, 17314, 15315, 12315, 34401, 22828, 15983, 14602, 12732, 8993, 35427, 17043, 15105, 5425, 14716, 24395, 54878, 16074, 26863, 30889, 21055, 33901, 21095, 29942, 31775, 47116, 24678, 8498, 33488] entropy=3.584 (norm=0.972)
+Layer 30: counts=[19010, 15023, 29171, 16528, 2610, 38168, 33638, 7615, 25328, 35995, 32603, 36466, 18668, 31173, 41306, 25486, 16206, 21141, 10073, 28795, 8962, 9769, 26778, 14999, 22812, 23822, 15997, 17796, 20144, 3887, 16500, 21363, 17928, 47829, 24167, 32736, 13246, 26614, 53614, 16034] entropy=3.566 (norm=0.967)
+Layer 31: counts=[14621, 34229, 26338, 31729, 16588, 57682, 17522, 18688, 46587, 13849, 15222, 7431, 30637, 48446, 14906, 25823, 17584, 42053, 667, 47401, 11709, 19580, 22946, 19878, 5289, 27550, 500, 20269, 27466, 20699, 14161, 4799, 15767, 55353, 37527, 20307, 18368, 15130, 16722, 17977] entropy=3.504 (norm=0.950)
+
+=== Routing Distribution & Entropy ===
+Layer 0: counts=[73500, 45500, 28500, 43000, 39500, 40000, 11000, 26500, 0, 31000, 49500, 3000, 42000, 33500, 11000, 47500, 5500, 38500, 50000, 12500, 5000, 2000, 34500, 500, 0, 25000, 5000, 1500, 2000, 1500, 2000, 2000, 9500, 3500, 53000, 2500, 5000, 30500, 37000, 66500] entropy=3.231 (norm=0.876)
+Layer 1: counts=[109500, 3500, 31465, 0, 0, 36500, 0, 0, 0, 0, 12500, 0, 0, 0, 0, 500, 0, 15500, 1500, 33535, 115000, 115000, 14000, 106500, 115000, 30373, 0, 0, 43000, 0, 115000, 3500, 0, 0, 2127, 0, 15500, 500, 0, 0] entropy=2.497 (norm=0.677)
+Layer 2: counts=[12682, 11659, 26996, 24490, 6943, 115000, 16000, 43602, 11993, 23593, 983, 9509, 25002, 8159, 4000, 12000, 60438, 81398, 15500, 24321, 6495, 23596, 13685, 8502, 24591, 21000, 18305, 29548, 26225, 22500, 33507, 11244, 9000, 21000, 9974, 53060, 11000, 22000, 16000, 4500] entropy=3.367 (norm=0.913)
+Layer 3: counts=[23998, 38000, 18503, 19000, 15000, 17795, 11820, 115000, 27463, 19570, 31153, 28423, 28074, 18477, 13455, 44148, 21816, 12350, 13000, 20958, 9431, 21903, 32870, 35586, 12500, 10333, 19935, 30516, 10522, 11274, 17565, 3012, 8000, 40500, 24414, 19923, 13500, 19137, 8876, 32200] entropy=3.487 (norm=0.945)
+Layer 4: counts=[44000, 12500, 42416, 0, 13848, 26475, 15014, 24040, 1500, 27500, 46575, 17005, 25211, 37487, 27129, 2500, 9100, 10525, 12066, 29999, 28500, 24423, 18669, 40000, 27549, 12499, 36760, 19500, 19500, 18500, 8977, 19455, 36549, 36118, 30676, 34473, 5994, 38005, 32995, 5968] entropy=3.516 (norm=0.953)
+Layer 5: counts=[27899, 43071, 22538, 22500, 50036, 12395, 19078, 43857, 8954, 15113, 21577, 44990, 5493, 37606, 22451, 12500, 24281, 33677, 26481, 29100, 5158, 14381, 27237, 16500, 32579, 24005, 29290, 10996, 10500, 3557, 9962, 40685, 29501, 24961, 14016, 11554, 10499, 15988, 23605, 41429] entropy=3.548 (norm=0.962)
+Layer 6: counts=[7830, 19513, 17569, 30574, 6506, 14967, 30846, 21178, 18034, 3500, 10140, 38535, 24327, 34195, 14088, 22500, 25052, 19000, 25500, 6500, 25452, 10500, 30500, 38500, 22547, 44363, 19500, 29959, 22577, 26382, 52194, 30089, 22021, 2372, 28464, 23691, 42216, 27885, 18323, 12111] entropy=3.563 (norm=0.966)
+Layer 7: counts=[8278, 25868, 16514, 34933, 76042, 19540, 16991, 13355, 21909, 10003, 32514, 22625, 46098, 19674, 11422, 20209, 40042, 9317, 14875, 19648, 9127, 13929, 4274, 23030, 33861, 15563, 27738, 22854, 27014, 23500, 24055, 7000, 33767, 16205, 29215, 17724, 25838, 45299, 23697, 16453] entropy=3.549 (norm=0.962)
+Layer 8: counts=[23248, 32655, 34085, 34878, 11106, 19775, 29231, 31303, 19236, 593, 22876, 24250, 19500, 890, 24806, 14792, 32896, 7414, 32038, 12044, 33041, 10923, 10410, 48048, 18273, 23265, 17857, 3261, 73901, 21126, 29959, 30045, 26361, 30031, 16495, 21000, 22715, 16937, 15513, 23223] entropy=3.531 (norm=0.957)
+Layer 9: counts=[17030, 15137, 21122, 36816, 27218, 18083, 17687, 20646, 51642, 14045, 12592, 6927, 10983, 20625, 28762, 4107, 37709, 19887, 27444, 34654, 23000, 35520, 23669, 6936, 20670, 33319, 42614, 7995, 33110, 60428, 11394, 24231, 9928, 23438, 47786, 26898, 4494, 16416, 6880, 18158] entropy=3.531 (norm=0.957)
+Layer 10: counts=[14329, 14174, 9077, 21158, 17912, 5127, 38105, 49292, 0, 15916, 24148, 13174, 19559, 27804, 28753, 14634, 18345, 34307, 21315, 49191, 9219, 37524, 23681, 25032, 1725, 8815, 24000, 8958, 15732, 71351, 9799, 39762, 18796, 16983, 27028, 9491, 44488, 16925, 26042, 48329] entropy=3.486 (norm=0.945)
+Layer 11: counts=[13682, 26783, 31859, 19347, 44310, 827, 3785, 18537, 34244, 42096, 25795, 29149, 9780, 25580, 27161, 9682, 13001, 18706, 18369, 45715, 29522, 16100, 61399, 21519, 25004, 58581, 8427, 15386, 28228, 52499, 11065, 2003, 26117, 5011, 4872, 22906, 5999, 6287, 27434, 33233] entropy=3.469 (norm=0.940)
+Layer 12: counts=[31523, 35612, 25864, 16799, 12315, 6508, 24502, 21694, 23387, 25194, 12000, 65071, 4338, 47245, 19842, 17046, 6331, 58636, 34066, 42389, 16016, 13520, 24541, 8082, 28355, 27484, 22800, 21635, 30150, 59, 15495, 9677, 18075, 22500, 14490, 28492, 19929, 18985, 33804, 15549] entropy=3.523 (norm=0.955)
+Layer 13: counts=[14688, 62534, 20219, 16759, 16561, 23546, 36742, 13500, 32402, 18057, 24134, 10670, 9309, 16912, 17891, 29582, 19185, 14997, 20179, 18498, 14729, 39781, 34272, 28871, 40334, 20555, 24977, 38188, 7422, 7509, 19589, 13472, 18466, 30970, 37984, 27552, 34650, 11009, 7950, 25355] entropy=3.575 (norm=0.969)
+Layer 14: counts=[30526, 41080, 12515, 54534, 28125, 24991, 20131, 21097, 8468, 28711, 2387, 15819, 25266, 15240, 10217, 57711, 3500, 16258, 9278, 11872, 27175, 36138, 29590, 28348, 35317, 32832, 47022, 30920, 14895, 9119, 16971, 20479, 22762, 13301, 20817, 19061, 17853, 16576, 20217, 22881] entropy=3.548 (norm=0.962)
+Layer 15: counts=[12377, 25713, 42989, 26013, 4989, 24061, 42901, 105079, 7132, 5000, 18028, 8019, 12502, 58394, 5629, 57789, 48040, 22952, 8161, 14677, 5861, 28435, 18054, 31748, 30112, 23466, 7872, 40011, 17277, 10679, 8195, 11672, 12899, 10652, 27026, 21290, 2474, 27213, 10304, 24315] entropy=3.401 (norm=0.922)
+Layer 16: counts=[78079, 12054, 20607, 24793, 14590, 32734, 14500, 12650, 20418, 23442, 32000, 23601, 19772, 18460, 10672, 48744, 9162, 7392, 46772, 25771, 17940, 12262, 13520, 17061, 22748, 6001, 52874, 638, 19968, 26915, 22840, 5002, 40544, 40563, 22767, 12690, 22797, 10500, 47753, 8404] entropy=3.486 (norm=0.945)
+Layer 17: counts=[49351, 72948, 49896, 22977, 10517, 34357, 21127, 10174, 21280, 18334, 20055, 8560, 1515, 10816, 44514, 11733, 21000, 20636, 45003, 7964, 4215, 23366, 3000, 12477, 31211, 15589, 11000, 24372, 31152, 38860, 25582, 34034, 36598, 29764, 34567, 18709, 4556, 19945, 6747, 11499] entropy=3.475 (norm=0.942)
+Layer 18: counts=[7582, 28036, 27909, 15243, 41156, 11209, 7615, 10081, 357, 28165, 12492, 6353, 27339, 10910, 19666, 32900, 51436, 7434, 6504, 52527, 29342, 11661, 22109, 22988, 34617, 14733, 42490, 12398, 10558, 15089, 24977, 78812, 24092, 27919, 34163, 12024, 6316, 27062, 34157, 29579] entropy=3.476 (norm=0.942)
+Layer 19: counts=[20687, 7714, 7785, 41204, 40027, 17832, 33882, 39513, 14756, 19869, 10233, 64407, 17711, 17651, 10998, 6432, 7465, 19403, 23090, 16079, 32937, 16002, 13941, 19687, 4503, 15164, 18989, 11780, 20631, 16627, 18334, 21560, 31227, 28515, 18255, 49129, 13235, 33413, 46503, 52830] entropy=3.525 (norm=0.956)
+Layer 20: counts=[23848, 13395, 42334, 38519, 19203, 12566, 21282, 75667, 39615, 39933, 20044, 10198, 12929, 24096, 5353, 28594, 17146, 18390, 17096, 14361, 1499, 29594, 17500, 27134, 20934, 15480, 9324, 7062, 16940, 22511, 16501, 35744, 32923, 25262, 10450, 23246, 42393, 15438, 38303, 17193] entropy=3.533 (norm=0.958)
+Layer 21: counts=[22174, 21857, 11696, 8075, 37018, 37217, 19755, 28512, 45399, 5238, 8881, 9544, 2069, 16995, 30427, 41894, 8186, 46458, 18040, 35178, 37651, 43126, 13391, 1322, 28408, 28270, 30204, 18440, 6524, 11286, 26005, 49520, 14918, 14349, 10039, 18392, 46533, 33499, 21039, 12471] entropy=3.503 (norm=0.950)
+Layer 22: counts=[54336, 21231, 7312, 30512, 31978, 38499, 15389, 14532, 3996, 14994, 15377, 7390, 5587, 37696, 89195, 20560, 12063, 51454, 23484, 14017, 4008, 20905, 3833, 17262, 9427, 1047, 5963, 28999, 24589, 64013, 27267, 29863, 48748, 60046, 17410, 9742, 14487, 3547, 13000, 6242] entropy=3.375 (norm=0.915)
+Layer 23: counts=[37611, 8071, 28188, 14106, 14007, 21338, 20503, 33162, 18991, 12247, 43140, 11349, 7133, 22029, 33005, 32961, 11896, 9701, 58073, 27170, 45180, 11273, 24162, 34115, 7809, 32568, 12487, 42178, 19773, 5137, 5912, 31363, 78938, 7971, 16897, 24494, 14659, 12320, 14942, 13141] entropy=3.493 (norm=0.947)
+Layer 24: counts=[43867, 18529, 55020, 7050, 56431, 13252, 18443, 15547, 37017, 29362, 17053, 14968, 11637, 24204, 15868, 40750, 24681, 13484, 13905, 10573, 49196, 502, 13421, 21813, 24493, 8765, 25484, 16760, 6009, 25306, 31792, 11628, 43269, 15069, 24341, 28735, 23531, 4957, 52091, 11197] entropy=3.503 (norm=0.950)
+Layer 25: counts=[15367, 9878, 42835, 14554, 34148, 25410, 20929, 22407, 27016, 33599, 5172, 8179, 14559, 10435, 43498, 10332, 18603, 15990, 33798, 8958, 8338, 13872, 39092, 44878, 24129, 11597, 25975, 14863, 33149, 16213, 19889, 15952, 17347, 34571, 30232, 26209, 23684, 13768, 31474, 59101] entropy=3.556 (norm=0.964)
+Layer 26: counts=[18498, 27646, 8172, 21303, 11572, 14873, 16181, 14345, 18921, 14521, 29000, 31083, 24480, 39804, 35033, 23438, 11702, 25914, 30566, 2902, 10307, 44587, 9442, 12758, 24271, 10770, 19264, 28939, 13007, 29929, 28418, 8933, 39443, 39654, 111346, 13965, 15458, 13699, 19313, 6543] entropy=3.480 (norm=0.943)
+Layer 27: counts=[48565, 20557, 16666, 92024, 20482, 20962, 24243, 14678, 25874, 40035, 5148, 24671, 10474, 11231, 37976, 16459, 21798, 12106, 16622, 14126, 27938, 46050, 34146, 7299, 19465, 22966, 12850, 15392, 9934, 15245, 29213, 16454, 44127, 44003, 10156, 13316, 12460, 9006, 12222, 23061] entropy=3.502 (norm=0.949)
+Layer 28: counts=[29198, 13216, 15036, 34281, 14417, 37543, 20197, 10540, 19481, 4057, 23966, 29000, 41840, 17329, 28010, 39701, 29900, 23731, 25363, 19279, 12714, 17815, 25110, 42036, 20425, 25884, 20386, 29227, 13138, 27066, 15965, 29752, 7274, 18981, 41443, 21410, 16771, 27552, 20454, 10512] entropy=3.602 (norm=0.977)
+Layer 29: counts=[24380, 20958, 11821, 37703, 25152, 14478, 27948, 28048, 10405, 14352, 35178, 22731, 17314, 15315, 12315, 34401, 22828, 15983, 14602, 12732, 8993, 35427, 17043, 15105, 5425, 14716, 24395, 54878, 16074, 26863, 30889, 21055, 33901, 21095, 29942, 31775, 47116, 24678, 8498, 33488] entropy=3.584 (norm=0.972)
+Layer 30: counts=[19010, 15023, 29171, 16528, 2610, 38168, 33638, 7615, 25328, 35995, 32603, 36466, 18668, 31173, 41306, 25486, 16206, 21141, 10073, 28795, 8962, 9769, 26778, 14999, 22812, 23822, 15997, 17796, 20144, 3887, 16500, 21363, 17928, 47829, 24167, 32736, 13246, 26614, 53614, 16034] entropy=3.566 (norm=0.967)
+Layer 31: counts=[14621, 34229, 26338, 31729, 16588, 57682, 17522, 18688, 46587, 13849, 15222, 7431, 30637, 48446, 14906, 25823, 17584, 42053, 667, 47401, 11709, 19580, 22946, 19878, 5289, 27550, 500, 20269, 27466, 20699, 14161, 4799, 15767, 55353, 37527, 20307, 18368, 15130, 16722, 17977] entropy=3.504 (norm=0.950)
+
+Baseline eval:
+Eval QA: 100%
+ 500/500 [10:38<00:00,  1.12it/s]
+Exact Match: 17.80  F1: 21.46

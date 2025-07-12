@@ -1,0 +1,11 @@
+tree-sitter-python
+datasets --upgrade
+git+https://github.com/huggingface/transformers.git
+sacrebleu
+rouge_score
+bert_score
+nltk
+scikit-learn
+tqdm
+codebleu
+evaluate

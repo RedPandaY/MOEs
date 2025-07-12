@@ -1,0 +1,1196 @@
+[nltk_data] Downloading package wordnet to /root/nltk_data...
+[nltk_data] Downloading package omw-1.4 to /root/nltk_data...
+/usr/local/lib/python3.11/dist-packages/huggingface_hub/utils/_auth.py:94: UserWarning: 
+The secret `HF_TOKEN` does not exist in your Colab secrets.
+To authenticate with the Hugging Face Hub, create a token in your settings tab (https://huggingface.co/settings/tokens), set it as secret in your Google Colab and restart your session.
+You will be able to reuse this secret in all of your notebooks.
+Please note that authentication is recommended but still optional to access public models or datasets.
+  warnings.warn(
+tokenizer_config.json: 100%
+ 793/793 [00:00<00:00, 68.1kB/s]
+tokenizer.json: 
+ 4.61M/? [00:00<00:00, 49.1MB/s]
+config.json: 
+ 1.07k/? [00:00<00:00, 110kB/s]
+configuration_deepseek.py: 
+ 10.2k/? [00:00<00:00, 1.18MB/s]
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/deepseek-moe-16b-base:
+- configuration_deepseek.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+modeling_deepseek.py: 
+ 72.7k/? [00:00<00:00, 7.03MB/s]
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/deepseek-moe-16b-base:
+- modeling_deepseek.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+model.safetensors.index.json: 
+ 490k/? [00:00<00:00, 45.1MB/s]
+Fetching 7 files: 100%
+ 7/7 [02:34<00:00, 40.11s/it]
+model-00004-of-00007.safetensors: 100%
+ 5.00G/5.00G [02:32<00:00, 60.9MB/s]
+model-00002-of-00007.safetensors: 100%
+ 5.00G/5.00G [02:32<00:00, 64.7MB/s]
+model-00003-of-00007.safetensors: 100%
+ 5.00G/5.00G [02:34<00:00, 148MB/s]
+model-00005-of-00007.safetensors: 100%
+ 5.00G/5.00G [02:32<00:00, 59.4MB/s]
+model-00006-of-00007.safetensors: 100%
+ 5.00G/5.00G [02:33<00:00, 115MB/s]
+model-00007-of-00007.safetensors: 100%
+ 2.77G/2.77G [01:28<00:00, 50.8MB/s]
+model-00001-of-00007.safetensors: 100%
+ 5.00G/5.00G [02:33<00:00, 123MB/s]
+Loading checkpoint shards: 100%
+ 7/7 [00:12<00:00,  1.65s/it]
+generation_config.json: 100%
+ 121/121 [00:00<00:00, 15.6kB/s]
+README.md: 
+ 7.62k/? [00:00<00:00, 917kB/s]
+train-00000-of-00001.parquet: 100%
+ 14.5M/14.5M [00:00<00:00, 82.6MB/s]
+validation-00000-of-00001.parquet: 100%
+ 1.82M/1.82M [00:00<00:00, 130MB/s]
+Generating train split: 100%
+ 87599/87599 [00:00<00:00, 415895.29 examples/s]
+Generating validation split: 100%
+ 10570/10570 [00:00<00:00, 404948.79 examples/s]
+Building mask on train...
+Mask indices per layer: [[np.int64(42), np.int64(2), np.int64(59), np.int64(63), np.int64(43), np.int64(14), np.int64(61), np.int64(26), np.int64(50), np.int64(40)], [np.int64(22), np.int64(53), np.int64(61), np.int64(43), np.int64(57), np.int64(37), np.int64(31), np.int64(60), np.int64(6), np.int64(14)], [np.int64(21), np.int64(47), np.int64(3), np.int64(50), np.int64(54), np.int64(51), np.int64(13), np.int64(9), np.int64(62), np.int64(34)], [np.int64(39), np.int64(33), np.int64(63), np.int64(21), np.int64(27), np.int64(1), np.int64(62), np.int64(49), np.int64(14), np.int64(53)], [np.int64(46), np.int64(58), np.int64(55), np.int64(13), np.int64(33), np.int64(3), np.int64(56), np.int64(48), np.int64(61), np.int64(50)], [np.int64(8), np.int64(6), np.int64(27), np.int64(39), np.int64(2), np.int64(55), np.int64(58), np.int64(38), np.int64(5), np.int64(59)], [np.int64(56), np.int64(14), np.int64(34), np.int64(13), np.int64(26), np.int64(2), np.int64(42), np.int64(30), np.int64(51), np.int64(62)], [np.int64(20), np.int64(23), np.int64(25), np.int64(39), np.int64(62), np.int64(31), np.int64(0), np.int64(42), np.int64(61), np.int64(50)], [np.int64(8), np.int64(37), np.int64(47), np.int64(33), np.int64(41), np.int64(12), np.int64(46), np.int64(20), np.int64(18), np.int64(28)], [np.int64(9), np.int64(58), np.int64(59), np.int64(53), np.int64(23), np.int64(31), np.int64(4), np.int64(30), np.int64(41), np.int64(1)], [np.int64(12), np.int64(29), np.int64(21), np.int64(45), np.int64(28), np.int64(34), np.int64(22), np.int64(43), np.int64(54), np.int64(9)], [np.int64(24), np.int64(40), np.int64(9), np.int64(54), np.int64(26), np.int64(57), np.int64(28), np.int64(19), np.int64(53), np.int64(3)], [np.int64(15), np.int64(10), np.int64(34), np.int64(55), np.int64(49), np.int64(44), np.int64(4), np.int64(36), np.int64(21), np.int64(41)], [np.int64(62), np.int64(53), np.int64(15), np.int64(5), np.int64(63), np.int64(9), np.int64(47), np.int64(58), np.int64(19), np.int64(42)], [np.int64(49), np.int64(43), np.int64(58), np.int64(13), np.int64(46), np.int64(33), np.int64(30), np.int64(0), np.int64(38), np.int64(19)], [np.int64(17), np.int64(22), np.int64(44), np.int64(5), np.int64(19), np.int64(62), np.int64(9), np.int64(46), np.int64(42), np.int64(15)], [np.int64(9), np.int64(23), np.int64(35), np.int64(48), np.int64(0), np.int64(12), np.int64(5), np.int64(51), np.int64(42), np.int64(45)], [np.int64(56), np.int64(26), np.int64(4), np.int64(36), np.int64(22), np.int64(24), np.int64(15), np.int64(49), np.int64(10), np.int64(1)], [np.int64(31), np.int64(61), np.int64(57), np.int64(14), np.int64(37), np.int64(38), np.int64(4), np.int64(10), np.int64(2), np.int64(49)], [np.int64(48), np.int64(25), np.int64(24), np.int64(18), np.int64(27), np.int64(56), np.int64(41), np.int64(61), np.int64(26), np.int64(15)], [np.int64(5), np.int64(46), np.int64(55), np.int64(10), np.int64(61), np.int64(17), np.int64(16), np.int64(42), np.int64(36), np.int64(58)], [np.int64(40), np.int64(36), np.int64(14), np.int64(5), np.int64(22), np.int64(20), np.int64(39), np.int64(29), np.int64(35), np.int64(30)], [np.int64(15), np.int64(33), np.int64(20), np.int64(8), np.int64(61), np.int64(48), np.int64(14), np.int64(39), np.int64(41), np.int64(63)], [np.int64(10), np.int64(12), np.int64(52), np.int64(39), np.int64(63), np.int64(40), np.int64(0), np.int64(33), np.int64(24), np.int64(8)], [np.int64(63), np.int64(58), np.int64(29), np.int64(54), np.int64(52), np.int64(57), np.int64(17), np.int64(19), np.int64(39), np.int64(35)], [np.int64(27), np.int64(10), np.int64(5), np.int64(35), np.int64(54), np.int64(14), np.int64(18), np.int64(1), np.int64(2), np.int64(57)], [np.int64(20), np.int64(8), np.int64(60), np.int64(21), np.int64(19), np.int64(27), np.int64(1), np.int64(0), np.int64(37), np.int64(43)]]
+
+Masked routing & entropy:
+
+=== Gating Entropy per Layer ===
+Layer 0 (model.layers.1.mlp.gate): avg entropy = 3.5658
+Layer 1 (model.layers.2.mlp.gate): avg entropy = 3.5320
+Layer 2 (model.layers.3.mlp.gate): avg entropy = 3.4451
+Layer 3 (model.layers.4.mlp.gate): avg entropy = 3.4441
+Layer 4 (model.layers.5.mlp.gate): avg entropy = 3.6650
+Layer 5 (model.layers.6.mlp.gate): avg entropy = 3.6853
+Layer 6 (model.layers.7.mlp.gate): avg entropy = 3.5970
+Layer 7 (model.layers.8.mlp.gate): avg entropy = 3.6423
+Layer 8 (model.layers.9.mlp.gate): avg entropy = 3.5277
+Layer 9 (model.layers.10.mlp.gate): avg entropy = 3.4175
+Layer 10 (model.layers.11.mlp.gate): avg entropy = 3.2647
+Layer 11 (model.layers.12.mlp.gate): avg entropy = 3.3005
+Layer 12 (model.layers.13.mlp.gate): avg entropy = 3.3360
+Layer 13 (model.layers.14.mlp.gate): avg entropy = 3.1506
+Layer 14 (model.layers.15.mlp.gate): avg entropy = 3.2443
+Layer 15 (model.layers.16.mlp.gate): avg entropy = 3.2724
+Layer 16 (model.layers.17.mlp.gate): avg entropy = 3.4746
+Layer 17 (model.layers.18.mlp.gate): avg entropy = 3.2559
+Layer 18 (model.layers.19.mlp.gate): avg entropy = 3.3548
+Layer 19 (model.layers.20.mlp.gate): avg entropy = 3.4922
+Layer 20 (model.layers.21.mlp.gate): avg entropy = 3.5117
+Layer 21 (model.layers.22.mlp.gate): avg entropy = 3.4638
+Layer 22 (model.layers.23.mlp.gate): avg entropy = 3.5097
+Layer 23 (model.layers.24.mlp.gate): avg entropy = 3.5714
+Layer 24 (model.layers.25.mlp.gate): avg entropy = 3.3953
+Layer 25 (model.layers.26.mlp.gate): avg entropy = 3.3052
+Layer 26 (model.layers.27.mlp.gate): avg entropy = 2.8016
+Routing (masked): 100%
+ 500/500 [04:42<00:00,  1.79it/s]
+
+=== Routing Distribution & Entropy ===
+Layer 0: counts=[13521, 7329, 0, 14916, 10008, 11972, 7541, 8927, 8956, 8453, 8633, 5919, 9282, 10233, 0, 9423, 10524, 6549, 11438, 8378, 7082, 11084, 12501, 6671, 5431, 5237, 0, 10010, 8635, 6771, 7430, 4891, 7049, 11610, 11500, 10242, 4846, 10003, 7039, 9965, 0, 7648, 0, 0, 9187, 8558, 9736, 9365, 11141, 8657, 0, 9178, 11603, 12049, 6178, 5739, 9180, 11420, 11235, 0, 17678, 0, 8873, 0] entropy=3.952 (norm=0.950)
+Layer 1: counts=[15064, 15467, 10611, 4857, 16436, 7119, 0, 5366, 5997, 11687, 9519, 9207, 2014, 5099, 0, 8096, 6364, 2801, 2183, 8740, 7832, 7898, 0, 13647, 9894, 5631, 8987, 5716, 3739, 9455, 18047, 0, 14929, 12549, 5884, 11201, 4135, 0, 10861, 13658, 11587, 3313, 5677, 0, 9492, 6337, 2362, 3948, 2478, 10784, 1168, 11600, 10718, 0, 32515, 10989, 33921, 0, 6326, 10968, 0, 0, 8249, 4302] entropy=3.798 (norm=0.913)
+Layer 2: counts=[3618, 11949, 12707, 0, 7260, 12070, 11862, 5639, 7991, 0, 9910, 7947, 11968, 0, 23952, 6522, 4718, 10234, 4189, 5969, 5888, 0, 8004, 9515, 7600, 6292, 6085, 18485, 10267, 8295, 3590, 5950, 6992, 11615, 0, 11153, 10395, 21131, 14194, 4883, 6543, 10692, 11486, 7269, 21688, 7245, 7421, 0, 12826, 6601, 0, 0, 10814, 14383, 0, 4445, 2607, 13389, 3279, 6900, 6473, 5207, 0, 9317] entropy=3.878 (norm=0.932)
+Layer 3: counts=[14542, 0, 6481, 4934, 4273, 13623, 5284, 4756, 4614, 2417, 5155, 2416, 15866, 6032, 0, 10507, 10592, 5719, 1926, 8533, 6320, 0, 8731, 12953, 10681, 4488, 8869, 0, 6287, 16050, 15785, 5255, 15397, 0, 10442, 19607, 2072, 13075, 5886, 0, 12964, 7658, 6899, 11496, 5140, 4849, 12492, 16445, 7409, 0, 12772, 2991, 16323, 0, 3600, 9948, 5687, 16353, 12639, 26209, 2815, 13167, 0, 0] entropy=3.833 (norm=0.922)
+Layer 4: counts=[15160, 12004, 4112, 0, 3766, 6915, 35521, 23287, 9956, 6294, 11342, 7861, 2116, 0, 6499, 6883, 6078, 12883, 2455, 4639, 16840, 7086, 1423, 5263, 6595, 12026, 4869, 7491, 6326, 6496, 5650, 6085, 10047, 0, 9, 12885, 5508, 11934, 9072, 3271, 13732, 2677, 5165, 14125, 8670, 4866, 0, 5495, 0, 2461, 0, 5575, 5755, 63902, 6797, 0, 0, 1688, 0, 15149, 9376, 0, 4819, 10525] entropy=3.658 (norm=0.879)
+Layer 5: counts=[12665, 1537, 0, 491, 8198, 0, 0, 5864, 0, 4472, 6936, 6997, 11480, 6167, 2633, 12326, 2431, 18534, 50743, 12797, 8143, 502, 8085, 15579, 9264, 4393, 7162, 0, 12295, 2685, 3658, 6833, 10999, 4362, 3936, 6962, 13107, 4120, 0, 0, 7689, 4288, 5893, 8815, 8825, 3274, 4813, 12464, 58683, 4178, 4562, 11984, 3240, 11711, 3251, 0, 12081, 4467, 0, 0, 5341, 16568, 16682, 2259] entropy=3.621 (norm=0.871)
+Layer 6: counts=[27431, 1091, 0, 3226, 8016, 3359, 8547, 3620, 4804, 34028, 14959, 11463, 27252, 0, 0, 4102, 2426, 31568, 12968, 11850, 1322, 4785, 5163, 71747, 14413, 1024, 0, 11335, 2042, 4095, 0, 2378, 6327, 858, 0, 16000, 12877, 4658, 6539, 3168, 265, 1855, 0, 391, 1065, 526, 13836, 16420, 777, 2762, 5950, 0, 12232, 1945, 9528, 720, 0, 5770, 6547, 3910, 3871, 25795, 0, 3818] entropy=3.425 (norm=0.824)
+Layer 7: counts=[0, 4214, 8809, 439, 7593, 16304, 34972, 465, 9561, 6627, 16987, 2188, 710, 6164, 575, 37606, 3908, 770, 60, 17526, 0, 5668, 377, 0, 5451, 0, 1876, 791, 11808, 11293, 1857, 0, 5086, 766, 6715, 4324, 3020, 8728, 1836, 0, 4864, 8647, 0, 21866, 4835, 14981, 7783, 9035, 14568, 36105, 0, 8754, 18338, 3682, 3167, 2216, 6475, 5673, 6408, 24006, 13653, 0, 0, 37294] entropy=3.529 (norm=0.848)
+Layer 8: counts=[10464, 27925, 4369, 14101, 15142, 6290, 573, 220, 0, 20905, 15337, 25, 0, 1433, 6335, 6196, 102, 3622, 0, 889, 0, 9556, 5635, 21894, 4809, 3276, 7970, 3369, 0, 12173, 26141, 9977, 12724, 0, 21171, 1464, 15033, 0, 3042, 1448, 594, 0, 1402, 31053, 31371, 10623, 0, 0, 5830, 2487, 4847, 8411, 9276, 10386, 3847, 8381, 3333, 7751, 8995, 2497, 3821, 40095, 5471, 3343] entropy=3.570 (norm=0.858)
+Layer 9: counts=[32886, 0, 14572, 3040, 0, 6208, 3005, 1601, 34630, 0, 10332, 2510, 4651, 6849, 1162, 4679, 13640, 5729, 11350, 1750, 7766, 5787, 11332, 0, 17420, 7367, 15921, 57, 9867, 10145, 0, 0, 930, 55401, 1211, 2342, 10540, 1998, 4487, 6438, 20852, 0, 38123, 5316, 3282, 2632, 1287, 3039, 2881, 1290, 11362, 11076, 6923, 0, 6981, 2676, 3134, 15611, 0, 0, 11811, 5161, 3740, 12644] entropy=3.534 (norm=0.850)
+Layer 10: counts=[1081, 7493, 3554, 4426, 681, 3748, 107, 1049, 926, 0, 6927, 50361, 0, 8040, 6292, 1561, 1354, 5982, 8239, 1846, 6051, 0, 0, 4732, 33879, 2887, 20548, 2732, 0, 0, 50946, 10473, 4482, 22635, 0, 2138, 2190, 28706, 0, 12628, 8092, 523, 5781, 0, 1260, 0, 2124, 11878, 9010, 248, 17001, 8423, 8289, 18994, 0, 10817, 38521, 1072, 19108, 572, 5060, 5640, 4165, 2152] entropy=3.386 (norm=0.814)
+Layer 11: counts=[1060, 12387, 2660, 0, 1218, 9913, 6170, 7586, 1900, 0, 6676, 1361, 53, 181, 13620, 26745, 785, 12162, 19313, 0, 19822, 8447, 13525, 4677, 0, 25869, 0, 1313, 0, 2042, 17600, 6657, 4226, 41310, 3174, 9108, 47876, 1711, 3753, 1931, 0, 2926, 9024, 4230, 808, 6711, 4476, 316, 10243, 5962, 17911, 325, 17351, 0, 0, 6863, 16933, 0, 9619, 8557, 4903, 20748, 10763, 1924] entropy=3.526 (norm=0.848)
+Layer 12: counts=[791, 10522, 2384, 6560, 0, 2631, 289, 9655, 276, 285, 0, 11625, 1480, 2269, 10505, 0, 4008, 16418, 24830, 1709, 4467, 0, 11940, 29266, 10094, 8625, 869, 18982, 6148, 7693, 4023, 4425, 1285, 12442, 0, 6365, 0, 14219, 16434, 17099, 4731, 0, 18832, 10814, 0, 3446, 14332, 18588, 7311, 0, 1970, 16297, 7003, 241, 13842, 0, 54363, 6674, 1792, 9375, 5644, 8204, 11473, 1879] entropy=3.592 (norm=0.864)
+Layer 13: counts=[3054, 7948, 13585, 25439, 14256, 0, 10370, 2432, 5820, 0, 10427, 10698, 4686, 10124, 29367, 0, 13849, 6033, 4758, 0, 6638, 822, 10627, 4107, 16174, 15350, 7361, 19448, 8423, 7699, 8753, 1598, 1988, 10067, 13996, 115, 32309, 18896, 3747, 1601, 3234, 9203, 0, 4518, 59498, 9805, 12153, 0, 3471, 1275, 2006, 3778, 3701, 0, 973, 5221, 4489, 8117, 0, 1049, 1740, 628, 0, 0] entropy=3.569 (norm=0.858)
+Layer 14: counts=[0, 12513, 7924, 24834, 1271, 1244, 11114, 2674, 33459, 5269, 2260, 18797, 4736, 0, 8976, 2528, 37267, 6204, 11022, 0, 3686, 19193, 3144, 5274, 15134, 5114, 11852, 29417, 33993, 4418, 0, 10922, 5730, 0, 4382, 3257, 10557, 2604, 0, 1948, 222, 294, 2337, 0, 27387, 7205, 0, 13346, 5453, 0, 4654, 3444, 3695, 3244, 2311, 5834, 8969, 3606, 0, 18355, 10040, 4403, 9627, 281] entropy=3.580 (norm=0.861)
+Layer 15: counts=[2908, 27939, 9993, 27868, 41084, 0, 10028, 5015, 19619, 0, 6330, 3352, 7097, 3680, 3157, 0, 7924, 0, 8308, 0, 8412, 4426, 0, 33452, 8651, 4634, 7504, 21223, 3785, 29289, 7462, 7253, 5802, 6286, 4625, 3906, 1928, 14473, 3274, 4249, 12850, 474, 0, 1592, 0, 3673, 0, 1905, 12750, 3138, 2054, 28749, 11323, 7748, 5910, 10774, 179, 13012, 3413, 4069, 1460, 4491, 0, 2924] entropy=3.601 (norm=0.866)
+Layer 16: counts=[0, 3977, 4877, 5441, 3951, 0, 3457, 13141, 6509, 0, 16100, 13947, 0, 20345, 5536, 12490, 9305, 15154, 10611, 13872, 3384, 4542, 19117, 0, 41437, 7043, 9203, 10677, 8590, 4433, 4073, 4000, 3039, 8091, 12592, 0, 5503, 5850, 19605, 2760, 2967, 12918, 0, 1800, 18326, 0, 7820, 3511, 0, 17475, 96, 0, 1625, 8096, 2684, 20190, 8624, 13781, 10416, 8165, 1802, 934, 20790, 2752] entropy=3.714 (norm=0.893)
+Layer 17: counts=[3214, 0, 26585, 3908, 0, 7154, 5693, 4572, 7784, 10525, 0, 8759, 2362, 5019, 9980, 0, 6568, 11860, 13936, 4753, 6651, 15199, 0, 36626, 0, 7054, 0, 8088, 15111, 7753, 552, 14397, 3318, 8303, 5102, 3408, 0, 2145, 9887, 6896, 1462, 5522, 7884, 4386, 20683, 4090, 8731, 20251, 10368, 0, 22454, 11756, 645, 7748, 4621, 13025, 0, 16205, 926, 8147, 7852, 11753, 20005, 5748] entropy=3.744 (norm=0.900)
+Layer 18: counts=[231, 9803, 0, 6098, 0, 8628, 6279, 26365, 19211, 26090, 0, 11630, 7231, 13552, 0, 10379, 6995, 3754, 4735, 8458, 21811, 10175, 15135, 9155, 11115, 13314, 2083, 4051, 4415, 4258, 3445, 0, 11656, 6767, 2968, 18339, 19854, 0, 0, 6111, 10402, 3798, 2127, 12491, 3097, 24521, 5657, 9565, 2514, 0, 13668, 9639, 8881, 10793, 5591, 7657, 3208, 0, 4567, 2400, 7802, 0, 5374, 9581] entropy=3.778 (norm=0.908)
+Layer 19: counts=[16752, 3114, 16553, 7915, 3814, 12757, 5070, 4284, 3916, 5831, 6676, 3538, 10107, 1082, 10971, 0, 5107, 6431, 0, 7907, 3063, 6951, 15582, 14862, 0, 0, 0, 0, 20141, 9066, 14020, 4407, 11056, 4437, 13657, 31820, 1357, 20245, 7535, 994, 16780, 0, 5338, 7508, 11531, 14892, 3156, 14063, 0, 4396, 10131, 7713, 10301, 18331, 1183, 6838, 0, 5729, 7371, 13698, 4991, 0, 7904, 14552] entropy=3.787 (norm=0.911)
+Layer 20: counts=[11647, 1946, 8714, 7729, 13912, 0, 2515, 1651, 4161, 12199, 0, 27863, 2014, 11292, 5346, 6116, 0, 0, 8208, 5071, 13303, 9622, 13790, 5656, 6440, 4360, 4908, 14356, 16151, 14154, 20419, 19700, 6202, 6824, 16025, 9728, 0, 37557, 17031, 10387, 5278, 4134, 0, 12645, 5045, 9717, 0, 1624, 2079, 16448, 7868, 4513, 10096, 1097, 4497, 0, 2358, 4959, 0, 6833, 1129, 0, 11182, 8925] entropy=3.746 (norm=0.901)
+Layer 21: counts=[14526, 12365, 16361, 12018, 16810, 0, 2517, 9152, 16298, 3869, 7017, 7461, 4955, 5507, 0, 1920, 5928, 10896, 10164, 19473, 0, 6974, 0, 9469, 11581, 4493, 5588, 14720, 13094, 0, 0, 6365, 3852, 36059, 8699, 0, 0, 6024, 9522, 0, 0, 6895, 4951, 4600, 3006, 9031, 2093, 2218, 782, 3029, 10309, 15319, 2871, 16512, 4141, 18618, 5262, 16401, 7524, 27503, 7220, 5392, 3730, 6340] entropy=3.765 (norm=0.905)
+Layer 22: counts=[6871, 7679, 8242, 9829, 10195, 6306, 7621, 3477, 0, 14286, 30997, 8323, 10902, 10012, 0, 0, 4353, 3254, 9671, 4035, 0, 11964, 7746, 6484, 15212, 1403, 11159, 10132, 24839, 22197, 1187, 16926, 18163, 0, 4906, 6133, 2583, 6549, 3515, 0, 7630, 0, 6311, 11669, 8149, 9394, 13559, 2077, 0, 2538, 18038, 1034, 3556, 1490, 21985, 5867, 10219, 16693, 10448, 6876, 8483, 0, 4257, 0] entropy=3.773 (norm=0.907)
+Layer 23: counts=[0, 10864, 1132, 20336, 13492, 15663, 64, 4064, 0, 6262, 0, 19303, 0, 3731, 5457, 10724, 566, 15990, 15961, 11903, 1157, 4153, 12742, 4421, 0, 1627, 14468, 19175, 7225, 8537, 8344, 10712, 5226, 0, 19434, 3704, 11750, 12815, 10475, 0, 0, 7216, 2771, 120, 13073, 6911, 12327, 3164, 2180, 13910, 5416, 1029, 0, 16535, 13413, 23122, 10974, 8707, 15466, 6398, 5498, 10830, 6887, 0] entropy=3.759 (norm=0.904)
+Layer 24: counts=[5292, 54918, 1915, 7254, 7901, 8944, 8203, 20159, 1259, 52277, 3330, 20209, 8233, 7356, 8920, 2916, 540, 0, 4770, 0, 5577, 3207, 3782, 1163, 4366, 19838, 5949, 4416, 15919, 0, 12535, 6522, 8452, 138, 8391, 0, 2550, 20100, 4400, 0, 11186, 19804, 95, 3611, 2220, 1164, 6381, 8830, 9662, 9380, 12017, 6295, 0, 4191, 0, 5427, 7653, 0, 0, 4087, 19565, 3271, 10884, 0] entropy=3.559 (norm=0.856)
+Layer 25: counts=[9553, 0, 0, 654, 5045, 0, 4948, 1650, 855, 10622, 0, 375, 15629, 5934, 0, 6032, 9308, 12398, 0, 18540, 19618, 9799, 2177, 4002, 9358, 50450, 7276, 0, 7748, 56, 2090, 12372, 8544, 12335, 21050, 0, 5946, 11056, 1874, 18370, 10462, 1257, 4947, 629, 22538, 8947, 5576, 10194, 33586, 5229, 8489, 471, 11910, 6280, 0, 4673, 3331, 0, 8662, 211, 10485, 16303, 836, 16744] entropy=3.604 (norm=0.867)
+Layer 26: counts=[0, 0, 5337, 40806, 8041, 1179, 18589, 5249, 0, 45726, 6623, 658, 595, 6419, 4049, 4875, 5959, 3835, 1187, 0, 0, 0, 7836, 9423, 82, 2675, 18348, 0, 14152, 21729, 12785, 3694, 8643, 5451, 9807, 14522, 3457, 0, 7647, 6601, 7878, 8993, 2489, 0, 477, 249, 6511, 190, 202, 11876, 9456, 456, 11865, 25364, 5375, 11646, 8337, 12780, 8268, 5642, 0, 5605, 13946, 33840] entropy=3.564 (norm=0.857)
+
+Masked eval:
+Downloading builder script: 
+ 4.53k/? [00:00<00:00, 449kB/s]
+Downloading extra modules: 
+ 3.32k/? [00:00<00:00, 389kB/s]
+Eval QA: 100%
+ 500/500 [3:34:43<00:00, 25.39s/it]
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Exact Match: 0.60  F1: 4.18
+
+Baseline routing & entropy:
+
+=== Gating Entropy per Layer ===
+Layer 0 (model.layers.1.mlp.gate): avg entropy = 3.6253
+Layer 1 (model.layers.2.mlp.gate): avg entropy = 3.5584
+Layer 2 (model.layers.3.mlp.gate): avg entropy = 3.3496
+Layer 3 (model.layers.4.mlp.gate): avg entropy = 3.3598
+Layer 4 (model.layers.5.mlp.gate): avg entropy = 3.3723
+Layer 5 (model.layers.6.mlp.gate): avg entropy = 3.4111
+Layer 6 (model.layers.7.mlp.gate): avg entropy = 3.3921
+Layer 7 (model.layers.8.mlp.gate): avg entropy = 3.4650
+Layer 8 (model.layers.9.mlp.gate): avg entropy = 3.4430
+Layer 9 (model.layers.10.mlp.gate): avg entropy = 3.4176
+Layer 10 (model.layers.11.mlp.gate): avg entropy = 3.4430
+Layer 11 (model.layers.12.mlp.gate): avg entropy = 3.5288
+Layer 12 (model.layers.13.mlp.gate): avg entropy = 3.5056
+Layer 13 (model.layers.14.mlp.gate): avg entropy = 3.2784
+Layer 14 (model.layers.15.mlp.gate): avg entropy = 3.3339
+Layer 15 (model.layers.16.mlp.gate): avg entropy = 3.2811
+Layer 16 (model.layers.17.mlp.gate): avg entropy = 3.3304
+Layer 17 (model.layers.18.mlp.gate): avg entropy = 3.1815
+Layer 18 (model.layers.19.mlp.gate): avg entropy = 3.2709
+Layer 19 (model.layers.20.mlp.gate): avg entropy = 3.3261
+Layer 20 (model.layers.21.mlp.gate): avg entropy = 3.4140
+Layer 21 (model.layers.22.mlp.gate): avg entropy = 3.2663
+Layer 22 (model.layers.23.mlp.gate): avg entropy = 3.2552
+Layer 23 (model.layers.24.mlp.gate): avg entropy = 3.4727
+Layer 24 (model.layers.25.mlp.gate): avg entropy = 3.3893
+Layer 25 (model.layers.26.mlp.gate): avg entropy = 3.2520
+Layer 26 (model.layers.27.mlp.gate): avg entropy = 2.8626
+Routing (base): 100%
+ 500/500 [05:28<00:00,  1.52it/s]
+
+=== Routing Distribution & Entropy ===
+Layer 0: counts=[11282, 4496, 12075, 10653, 7746, 9569, 7110, 6644, 7528, 8261, 6815, 4862, 8075, 7164, 12222, 8163, 7861, 5068, 7700, 7354, 6018, 8452, 8120, 5105, 4539, 3718, 12887, 7747, 7041, 6280, 5578, 3447, 5551, 9143, 8021, 8613, 4021, 7365, 5961, 7341, 9009, 6709, 10670, 10156, 7483, 7298, 8414, 7750, 7270, 6677, 10145, 8808, 7845, 8098, 3662, 4250, 8622, 7289, 7850, 13431, 15481, 7762, 6240, 10909] entropy=4.112 (norm=0.989)
+Layer 1: counts=[8346, 5570, 7298, 7529, 7891, 7933, 7240, 5576, 5189, 5892, 6403, 4573, 5021, 7227, 9312, 10010, 7562, 8994, 4129, 7002, 8616, 3911, 14164, 6795, 4106, 6460, 5483, 6524, 4064, 6754, 10216, 8734, 12240, 7608, 6592, 8323, 5349, 10020, 8475, 10803, 6347, 5189, 8526, 11784, 7375, 9861, 5767, 7700, 8242, 6286, 5004, 10915, 4805, 28926, 5393, 7042, 4096, 7773, 7543, 7270, 14332, 13898, 4582, 4834] entropy=4.075 (norm=0.980)
+Layer 2: counts=[7974, 7029, 8143, 11882, 6177, 6942, 7607, 4688, 6504, 15243, 7380, 12838, 6577, 8707, 8159, 4779, 6519, 9067, 6989, 4263, 7926, 14717, 8633, 6815, 3405, 8054, 10315, 14628, 5204, 8607, 5312, 8300, 5249, 8779, 5062, 8181, 7012, 5573, 7230, 5586, 6647, 8374, 8091, 3657, 9580, 9690, 7447, 10572, 11737, 5295, 16317, 8164, 8637, 7154, 5175, 8088, 6319, 6719, 5483, 3386, 6572, 5163, 10051, 7051] entropy=4.101 (norm=0.986)
+Layer 3: counts=[11080, 9959, 7292, 5342, 5936, 8331, 4093, 4626, 7563, 6252, 6383, 5792, 7258, 4554, 8728, 9500, 6124, 4800, 7890, 6380, 4805, 10596, 9634, 4963, 4930, 3580, 6141, 11173, 7506, 14290, 9029, 7046, 10706, 12449, 7972, 9991, 3223, 11514, 5605, 9979, 9229, 6089, 9882, 5992, 8079, 8364, 9527, 6361, 8141, 8156, 6002, 6553, 11900, 9106, 6886, 10117, 4982, 6061, 6334, 4961, 4128, 10435, 14460, 12664] entropy=4.103 (norm=0.987)
+Layer 4: counts=[12315, 10054, 3679, 9511, 4676, 5807, 7580, 6746, 4484, 5334, 7103, 7929, 8355, 12898, 6679, 4562, 8454, 8022, 4468, 8705, 14209, 9462, 6057, 3409, 6836, 7860, 6821, 9879, 6170, 9247, 4783, 4281, 8258, 10699, 1766, 11464, 8298, 5236, 8937, 3932, 10485, 5669, 5749, 6410, 9638, 7011, 7418, 4798, 8058, 2411, 8757, 7449, 7338, 7611, 7924, 14091, 18358, 6125, 13147, 7535, 7711, 11259, 7190, 10317] entropy=4.086 (norm=0.983)
+Layer 5: counts=[4861, 1981, 15951, 1765, 7339, 11138, 13009, 10407, 10475, 6891, 5960, 5524, 8276, 6680, 4633, 6790, 7936, 6464, 31995, 7283, 6632, 4241, 7041, 16629, 7896, 6414, 4882, 9149, 7791, 7445, 7799, 6757, 9778, 6805, 3216, 4271, 4706, 6193, 11315, 10118, 7831, 7242, 10144, 4636, 3971, 5533, 5743, 8582, 8347, 6134, 7062, 8836, 4398, 5373, 5774, 23443, 3378, 8676, 7605, 4934, 4340, 11176, 4996, 4834] entropy=4.025 (norm=0.968)
+Layer 6: counts=[6309, 1744, 9285, 3706, 11996, 4653, 9041, 6755, 5435, 11217, 9966, 7619, 10583, 10892, 25131, 5091, 4085, 7896, 7490, 11108, 5472, 10912, 7863, 5402, 8337, 3189, 10442, 5368, 9616, 11495, 9845, 4457, 6335, 6900, 12776, 6821, 8634, 6406, 5914, 4377, 1127, 4767, 13129, 5187, 6833, 6874, 4060, 7648, 5050, 4269, 2529, 10558, 8694, 7828, 8498, 6032, 13500, 4147, 9678, 5242, 10363, 6333, 18155, 6360] entropy=4.049 (norm=0.974)
+Layer 7: counts=[11036, 4377, 8493, 8339, 4611, 6499, 6813, 875, 6569, 8318, 4672, 4516, 3749, 8106, 2574, 6965, 9132, 2341, 5932, 23237, 14825, 7653, 671, 17569, 8669, 23149, 5577, 1696, 6711, 9499, 2948, 10808, 7065, 2272, 6458, 4876, 3722, 5874, 5967, 15841, 6951, 6926, 13495, 11179, 6596, 13975, 12812, 13963, 5255, 9344, 7683, 9124, 7401, 5393, 7258, 1515, 7029, 5328, 7146, 3113, 7829, 6440, 14691, 7974] entropy=3.996 (norm=0.961)
+Layer 8: counts=[7840, 8983, 4396, 11763, 5796, 3555, 1307, 3145, 7826, 8301, 13993, 1734, 11179, 5613, 7122, 3101, 7551, 7000, 11783, 4826, 11380, 7039, 9396, 9703, 5858, 7288, 1193, 6184, 32200, 6388, 9761, 8632, 4608, 6901, 8947, 1043, 4907, 12803, 4910, 3181, 6542, 23220, 6498, 4170, 9387, 5626, 9375, 17003, 3005, 7383, 5559, 9980, 6813, 4387, 6879, 8689, 5297, 8963, 17778, 5762, 3095, 7844, 7153, 7880] entropy=3.990 (norm=0.960)
+Layer 9: counts=[6505, 11709, 16196, 1058, 33563, 5572, 6887, 3081, 8488, 37303, 3663, 3750, 6049, 6745, 3102, 5814, 14763, 4397, 5399, 3941, 12716, 10199, 4911, 12271, 5384, 7979, 2627, 3631, 5361, 6091, 16019, 11774, 4113, 6917, 531, 8585, 9619, 10761, 4417, 7636, 4285, 9339, 4404, 4359, 2081, 7378, 3110, 2124, 1955, 6552, 2904, 3564, 6956, 12455, 6254, 4320, 6967, 6558, 7378, 30909, 4822, 3365, 8442, 7416] entropy=3.886 (norm=0.934)
+Layer 10: counts=[10003, 1628, 3705, 4408, 9268, 3290, 4991, 5135, 7909, 6142, 3132, 2972, 23087, 7043, 9617, 4951, 2889, 5269, 9331, 1564, 6866, 11463, 12819, 6460, 7149, 7657, 19905, 2469, 2775, 15902, 4759, 12687, 8832, 7191, 12791, 2813, 10191, 9074, 5922, 880, 6908, 3082, 5211, 12504, 4474, 21787, 5810, 11788, 8989, 2850, 5917, 10161, 4800, 10672, 11748, 8433, 8565, 13267, 10064, 1978, 13434, 7716, 7990, 4337] entropy=3.990 (norm=0.959)
+Layer 11: counts=[3635, 13820, 6397, 3077, 721, 8440, 12127, 11982, 3365, 12640, 9737, 9433, 1475, 5792, 8013, 6198, 2026, 10398, 6751, 8540, 5910, 4740, 6044, 9242, 24619, 6254, 12929, 4382, 11023, 5557, 8034, 12086, 5635, 8004, 2514, 6276, 10003, 5407, 3141, 11477, 24448, 7231, 7965, 9862, 3158, 5564, 4513, 491, 12677, 8061, 6181, 2791, 2955, 7116, 13867, 10593, 1887, 10832, 7039, 8388, 5865, 18282, 8967, 847] entropy=3.978 (norm=0.957)
+Layer 12: counts=[1705, 4817, 5201, 5802, 5597, 4767, 904, 6605, 739, 6804, 24675, 5772, 1924, 6448, 5515, 17266, 5855, 4414, 8139, 331, 2963, 9207, 3906, 5993, 4542, 4914, 2598, 4510, 3801, 4767, 2352, 5540, 7099, 17220, 13326, 5624, 11610, 6988, 2867, 4166, 2887, 15822, 4046, 8310, 11819, 3586, 6079, 13504, 4426, 1634, 2180, 4616, 6572, 916, 3116, 52991, 65966, 6147, 6067, 5584, 5572, 2985, 9992, 5334] entropy=3.686 (norm=0.886)
+Layer 13: counts=[3774, 6880, 16324, 5190, 14535, 7779, 7774, 764, 5161, 11821, 6717, 5800, 8403, 13176, 4793, 57037, 6668, 3368, 2589, 10774, 7003, 5259, 6794, 4962, 8317, 7392, 3430, 8336, 8557, 5657, 10164, 7152, 1848, 9812, 2255, 3527, 11637, 7068, 2486, 3251, 3141, 4219, 9043, 3136, 8613, 12170, 6109, 9952, 3946, 3619, 4441, 6355, 5362, 6745, 3982, 6740, 2794, 6329, 7967, 2955, 6382, 609, 30188, 18393] entropy=3.863 (norm=0.929)
+Layer 14: counts=[6109, 12091, 7838, 5954, 3499, 4106, 3946, 6249, 7465, 2910, 3563, 5691, 5648, 11457, 6488, 1067, 3116, 4325, 7731, 16503, 4703, 10194, 5926, 4480, 12193, 8082, 17724, 10384, 4993, 4762, 8567, 10165, 7322, 15417, 4089, 6033, 7025, 4003, 15066, 2767, 2460, 2978, 2451, 10887, 10700, 6241, 25375, 12060, 2845, 10369, 7888, 4078, 4239, 5860, 8214, 4699, 8674, 7075, 14178, 36695, 7112, 4620, 7568, 507] entropy=3.947 (norm=0.949)
+Layer 15: counts=[4247, 5785, 6947, 9738, 29893, 12262, 6393, 4422, 7791, 11746, 5826, 3566, 7834, 3858, 2273, 15135, 3525, 27955, 6442, 23307, 4178, 8146, 33279, 8248, 7863, 5451, 4923, 9387, 3318, 7479, 7954, 3719, 3409, 11299, 5499, 4650, 5207, 6217, 5069, 3893, 12179, 3000, 10800, 6987, 18357, 4897, 6644, 2264, 5295, 3810, 2874, 8347, 7229, 15707, 3866, 6355, 4742, 3401, 668, 4698, 1861, 5646, 4942, 4722] entropy=3.906 (norm=0.939)
+Layer 16: counts=[12206, 5209, 8188, 3499, 2939, 14006, 5215, 4322, 5443, 4974, 15923, 10115, 12194, 3714, 4664, 5706, 8675, 2909, 7355, 6707, 3196, 3413, 5842, 17364, 7977, 9400, 9466, 4273, 2845, 16945, 4397, 4602, 4242, 5992, 9854, 15779, 5228, 8015, 10572, 3442, 4149, 5868, 18728, 4135, 11938, 5841, 9114, 2250, 11819, 6533, 4140, 15939, 2224, 8638, 4884, 10246, 9266, 18672, 6209, 5195, 5386, 9329, 10083, 10031] entropy=4.016 (norm=0.966)
+Layer 17: counts=[4535, 13402, 10869, 5844, 19210, 2876, 4326, 3731, 3522, 9285, 14524, 14048, 2853, 5157, 4616, 8680, 9216, 8185, 4505, 4730, 7517, 4789, 13395, 4681, 13247, 6260, 22858, 8815, 6925, 4702, 3255, 9200, 5005, 8906, 9228, 4130, 7959, 3734, 7390, 7179, 3553, 3386, 11254, 4075, 7085, 6507, 5378, 7041, 6193, 19605, 9851, 8089, 5173, 8499, 4555, 5587, 13982, 16957, 3677, 4880, 4625, 12626, 6374, 5183] entropy=4.020 (norm=0.967)
+Layer 18: counts=[6023, 3211, 11341, 6678, 12513, 6660, 5746, 6306, 4422, 7173, 15924, 13106, 5040, 9673, 12428, 10835, 8620, 6948, 4472, 6407, 5911, 7681, 11429, 6713, 8003, 5656, 5991, 7058, 8493, 2773, 4319, 37044, 7848, 9553, 4567, 4503, 8457, 21331, 6778, 7182, 5271, 2837, 7523, 10110, 4441, 6942, 8984, 5787, 1414, 10529, 8228, 5857, 5262, 7377, 5484, 6739, 4716, 836, 6279, 5092, 3321, 18539, 6299, 4741] entropy=3.996 (norm=0.961)
+Layer 19: counts=[15019, 1640, 6086, 3646, 6715, 9872, 6812, 5001, 4437, 5878, 5074, 6950, 4946, 3147, 5952, 13392, 4334, 5981, 20578, 5063, 3865, 7713, 3130, 10495, 19870, 15672, 10282, 24980, 3802, 8481, 4787, 3571, 7061, 6613, 6032, 8188, 5486, 6106, 3635, 3824, 4856, 6587, 7497, 11166, 8233, 10174, 4747, 3634, 16185, 10004, 5611, 6236, 10814, 6772, 2441, 8015, 12999, 5487, 5745, 14934, 3483, 16342, 4655, 6691] entropy=4.003 (norm=0.962)
+Layer 20: counts=[4436, 5371, 4472, 9514, 5365, 22680, 3634, 2667, 2177, 2056, 15260, 5999, 5427, 7876, 5083, 3600, 9155, 19260, 9200, 5583, 14157, 6321, 5153, 7257, 8250, 6278, 7144, 5835, 12335, 11138, 21779, 8121, 3163, 7671, 5421, 6584, 7230, 3244, 8144, 5034, 4180, 7044, 6658, 10492, 4990, 6348, 22476, 6091, 1999, 4929, 7839, 7493, 5323, 5097, 5278, 26213, 10963, 5264, 13101, 7995, 1928, 6397, 7035, 3217] entropy=3.980 (norm=0.957)
+Layer 21: counts=[1789, 7368, 8051, 4497, 5549, 19771, 5086, 5908, 8402, 5465, 3554, 3525, 5523, 10498, 5837, 2555, 4673, 2530, 4201, 14350, 15640, 5583, 9182, 4348, 3198, 3611, 3706, 5891, 4571, 11053, 6301, 10282, 3929, 3905, 5859, 11571, 65378, 3091, 4920, 15174, 14988, 7534, 5550, 3892, 4503, 4059, 6523, 7046, 7954, 4159, 6986, 7243, 11856, 10812, 4180, 7387, 5487, 2750, 7118, 11017, 9130, 5750, 4177, 10998] entropy=3.875 (norm=0.932)
+Layer 22: counts=[9826, 5893, 7482, 10108, 7751, 2266, 6723, 5689, 18170, 2951, 6158, 6581, 3181, 7641, 7470, 15284, 5881, 4791, 6278, 6504, 18639, 11611, 4781, 5703, 1896, 7970, 10666, 5282, 23095, 5969, 5464, 7516, 9169, 8813, 4418, 9718, 6845, 5488, 10235, 15461, 7434, 8527, 6773, 6212, 6412, 10698, 3696, 6537, 11851, 4874, 14310, 4646, 6117, 3581, 18664, 4420, 2414, 6341, 7864, 4285, 3680, 11368, 5785, 5568] entropy=4.029 (norm=0.969)
+Layer 23: counts=[8982, 8382, 8147, 3504, 12505, 7262, 5395, 5712, 13317, 4475, 7458, 5880, 6358, 17122, 10267, 9319, 6984, 7097, 10761, 11058, 5433, 4502, 9198, 4708, 7878, 7817, 12493, 5197, 10592, 2490, 5933, 8675, 4269, 9822, 5912, 7172, 5369, 14450, 2606, 13883, 12566, 8496, 5223, 5069, 8204, 6593, 10069, 5378, 6178, 6344, 10846, 7371, 3240, 4077, 10181, 7914, 4396, 9268, 7194, 9792, 5706, 3377, 5801, 15757] entropy=4.076 (norm=0.980)
+Layer 24: counts=[6084, 11145, 7263, 3781, 5240, 11723, 6429, 6428, 7149, 43757, 6024, 8986, 11794, 4362, 9270, 9523, 3965, 5214, 5221, 6833, 4551, 4904, 6602, 7232, 8821, 5806, 4377, 11480, 11160, 23444, 6020, 7404, 10961, 4439, 6831, 5574, 3800, 9276, 2632, 10113, 5193, 3181, 6854, 3075, 8420, 5766, 7013, 5405, 7654, 8021, 5742, 4232, 12514, 7010, 6430, 5111, 6316, 4237, 15075, 7306, 8579, 5629, 2785, 10258] entropy=3.992 (norm=0.960)
+Layer 25: counts=[9679, 24189, 12114, 5905, 5598, 19032, 7752, 6373, 2193, 3087, 16254, 5708, 7281, 6659, 10015, 5597, 5564, 3531, 10673, 6346, 4760, 7513, 6801, 5035, 4128, 5590, 9391, 8142, 9092, 7561, 2971, 8655, 8994, 8274, 10887, 9514, 8890, 8904, 7839, 11242, 4342, 4724, 5429, 10847, 11441, 9591, 3981, 11121, 3297, 7383, 6253, 4871, 16687, 9936, 15264, 4523, 4382, 11396, 1685, 4922, 3018, 2100, 7652, 4846] entropy=4.031 (norm=0.969)
+Layer 26: counts=[13777, 9544, 6700, 7004, 10304, 6215, 4329, 3909, 11921, 5378, 8204, 6351, 9511, 7861, 4053, 5683, 9786, 8559, 3326, 3405, 49173, 9431, 7297, 2949, 3650, 5746, 5032, 6764, 5001, 9425, 5791, 8683, 6239, 6813, 7496, 5164, 7416, 6803, 6700, 7239, 7303, 7079, 6512, 10643, 7649, 5125, 5112, 7378, 4515, 10491, 4760, 7530, 8277, 12219, 2891, 5814, 6988, 9355, 2733, 5558, 8929, 8654, 10721, 12556] entropy=4.001 (norm=0.962)
+
+Baseline eval:
+Eval QA: 100%
+ 500/500 [3:33:32<00:00, 28.55s/it]
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Setting `pad_token_id` to `eos_token_id`:100001 for open-end generation.
+Exact Match: 2.60  F1: 17.13
